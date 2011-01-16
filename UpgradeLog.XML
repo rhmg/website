@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="rhmgWebsite.Web">
+</Property><Property Name="Solution File" Value="C:\rhmg\website\rhmgWebsite.Web.sln">
+</Property><Property Name="Date" Value="16 January 2011">
+</Property><Property Name="Time" Value="10:16:49">
+</Property></Properties><Event ErrorLevel="0" Project="rhmgWebsite.Web" Source="rhmgWebsite.Web.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="rhmgWebsite.Web" Source="rhmgWebsite.Web.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="rhmgWebsite.Web" Source="rhmgWebsite.Web.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

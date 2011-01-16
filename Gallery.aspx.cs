@@ -22,6 +22,7 @@ namespace rhmgWebsite.Web
             ThumbnailNavigator2.Populate("BuildingTheStudio");
             ThumbnailNavigator3.Populate("RecordingTheSilvertones");
             ThumbnailNavigator4.Populate("PhotoshootWithNaz");
+            ThumbnailNavigator5.Populate("PostImprovements");
         }
     }
 }

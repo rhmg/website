@@ -61,9 +61,37 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\rhmgWebsite.xap" />
+    <Content Include="PostImprovements.aspx" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Rehearsal Room Newly Refurbished Drum Kits Guitar and Bass Amp.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Rehearsing in the Live Room.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Rehearsing in the Live Room_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Rocking in the Live Room.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Rocking in the Live Room_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Using One Of Our Three Rehearsal Rooms.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Using One Of Our Three Rehearsal Rooms_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Live Room With Space for Large Bands.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Live Room With Space for Large Bands_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Mixing Control Surface In Recording Studio With Yamaha NS10s.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Mixing Control Surface In Recording Studio With Yamaha NS10s_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Newly Refurbished Control Room Available For Recording Now.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Newly Refurbished Control Room Available For Recording Now_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Pool Table and Sofa for Bands to Chill While Recording.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Pool Table and Sofa for Bands to Chill While Recording_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Projection Cinema System and Pool Table for Bands to Enjoy during Recording Sessions.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Projection Cinema System and Pool Table for Bands to Enjoy during Recording Sessions_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Refurbished Rehearsal Room Brand New PA.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Refurbished Rehearsal Room Brand New PA_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Rehearsal Room Newly Refurbished Drum Kits Guitar and Bass Amp_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool The Corridor Showing Kitchen Control Room Live Room and Room 4.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool The Corridor Showing Kitchen Control Room Live Room and Room 4_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Fun In Room 4 With A Band Rehearsing Prior to Recording.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Fun In Room 4 With A Band Rehearsing Prior to Recording_.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Highly Welcoming Entrance Area With Comfy Sofa With Rehearsal and Recording Spaces Leading Off.jpg" />
+    <Content Include="images\photos\post_improvements\Rock Hard Studios Highly Welcoming Entrance Area With Comfy Sofa With Rehearsal and Recording Spaces Leading Off_.jpg" />
     <Content Include="rhmgWebsiteTestPage.aspx" />
     <Content Include="Silverlight.js" />
     <Content Include="Web.config" />
+    <Content Include="App_Data\Photosets\PostImprovements.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Academy.aspx.cs">
@@ -107,6 +135,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostImprovements.aspx.cs">
+      <DependentUpon>PostImprovements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostImprovements.aspx.designer.cs">
+      <DependentUpon>PostImprovements.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\Bookmark.ascx.cs">
       <DependentUpon>Bookmark.ascx</DependentUpon>

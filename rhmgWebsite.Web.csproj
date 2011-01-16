@@ -80,13 +80,6 @@
     <Compile Include="AndrewCox.aspx.designer.cs">
       <DependentUpon>AndrewCox.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Base.Master.cs">
-      <DependentUpon>Base.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Base.Master.designer.cs">
-      <DependentUpon>Base.Master</DependentUpon>
-    </Compile>
     <Compile Include="BuildingTheStudio.aspx.cs">
       <DependentUpon>BuildingTheStudio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -536,7 +529,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Data\Content\Quotes.xsd" />
-    <Content Include="Base.Master" />
     <None Include="Downloads\Drum School Poster.pdf" />
     <None Include="Downloads\Free Recording Offer.pdf" />
     <None Include="Downloads\Full Equipment List.pdf" />
@@ -554,9 +546,6 @@
     <Content Include="ExploreTheStudio.aspx" />
     <Content Include="FreeRecordingAndRehearsalsDeal.aspx" />
     <Content Include="HowToFindUs.aspx" />
-    <Content Include="images\backgrounds\rhmgAcademy_bluebox.jpg" />
-    <Content Include="images\backgrounds\rhmgAcademy_pictures.png" />
-    <Content Include="images\backgrounds\rhmgAcademy_web.jpg" />
     <Content Include="images\banners\Looking through from Control Room Into Live Room with singer Recording at Blackpool Recording Studio.jpg" />
     <Content Include="images\follow link.png" />
     <Content Include="images\logo_75.gif" />

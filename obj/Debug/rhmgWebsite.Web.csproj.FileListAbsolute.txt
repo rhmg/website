@@ -1,32 +1,3 @@
-D:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.dll
-D:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.pdb
-D:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\ResolveAssemblyReference.cache
-D:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.dll
-D:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.pdb
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\ResolveAssemblyReference.cache
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.dll
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.dll
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.pdb
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.pdb
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\SharpPieces.Web.Controls.dll
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\SharpPieces.Web.Controls.pdb
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\BuildTheStudio.xml
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.dll
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.pdb
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\SharpPieces.Web.Controls.dll
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\SharpPieces.Web.Controls.pdb
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\ResolveAssemblyReference.cache
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.dll
-\\Controlroompc\nt3600 (l)\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.pdb
-G:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\App_Data\Photosets\BuildingTheStudio.xml
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\App_Data\Photosets\BuildingTheStudio.xml
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.dll
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\rhmgWebsite.Web.pdb
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\SharpPieces.Web.Controls.dll
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\bin\SharpPieces.Web.Controls.pdb
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\ResolveAssemblyReference.cache
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.dll
-E:\Projects\www.rhmg.co.uk\rhmgWebsite\rhmgWebsite.Web\obj\Debug\rhmgWebsite.Web.pdb
 C:\rhmg\website\bin\App_Data\Photosets\BuildingTheStudio.xml
 C:\rhmg\website\bin\rhmgWebsite.Web.dll
 C:\rhmg\website\bin\rhmgWebsite.Web.pdb

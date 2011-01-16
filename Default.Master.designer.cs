@@ -14,6 +14,24 @@ namespace rhmgWebsite.Web {
     public partial class Default {
         
         /// <summary>
+        /// Header control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlHead Header;
+        
+        /// <summary>
+        /// pageBody control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pageBody;
+        
+        /// <summary>
         /// mainTable control.
         /// </summary>
         /// <remarks>
@@ -23,22 +41,49 @@ namespace rhmgWebsite.Web {
         protected global::System.Web.UI.WebControls.Table mainTable;
         
         /// <summary>
-        /// TableRow2 control.
+        /// LogoImg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow TableRow2;
+        protected global::System.Web.UI.WebControls.HyperLink LogoImg;
         
         /// <summary>
-        /// TableCell6 control.
+        /// BannerImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell TableCell6;
+        protected global::System.Web.UI.WebControls.Image BannerImage;
+        
+        /// <summary>
+        /// subTitleText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label subTitleText;
+        
+        /// <summary>
+        /// ContactUsPanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::rhmgWebsite.Web.CustomControls.ContactUsPanel ContactUsPanel1;
+        
+        /// <summary>
+        /// BrandingNavBar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::rhmgWebsite.Web.CustomControls.BrandingNavBar BrandingNavBar1;
         
         /// <summary>
         /// SidePanel1 control.
@@ -50,31 +95,13 @@ namespace rhmgWebsite.Web {
         protected global::rhmgWebsite.Web.CustomControls.SidePanel SidePanel1;
         
         /// <summary>
-        /// TableCell7 control.
+        /// TableRow1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell TableCell7;
-        
-        /// <summary>
-        /// TableRow3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow TableRow3;
-        
-        /// <summary>
-        /// Panel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.TableRow TableRow1;
         
         /// <summary>
         /// ContentPlaceHolder1 control.
@@ -86,22 +113,22 @@ namespace rhmgWebsite.Web {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
-        /// TableRow4 control.
+        /// TableRow2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow TableRow4;
+        protected global::System.Web.UI.WebControls.TableRow TableRow2;
         
         /// <summary>
-        /// TableRow5 control.
+        /// TableRow3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow TableRow5;
+        protected global::System.Web.UI.WebControls.TableRow TableRow3;
         
         /// <summary>
         /// BottomBannerContentPlaceHolder control.
@@ -111,6 +138,33 @@ namespace rhmgWebsite.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder BottomBannerContentPlaceHolder;
+        
+        /// <summary>
+        /// SidePanel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::rhmgWebsite.Web.CustomControls.Bookmark SidePanel2;
+        
+        /// <summary>
+        /// Newsletter1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::rhmgWebsite.Web.CustomControls.Newsletter Newsletter1;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// AdContentPlaceHolder control.

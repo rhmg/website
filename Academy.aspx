@@ -2,7 +2,7 @@
     MasterPageFile="~/Default.Master" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Table ID="Table1" runat="server" BackImageUrl="~/images/backgrounds/rhmgAcademy_web.jpg">
+    <asp:Table ID="Table1" runat="server">
         <asp:TableRow>
             <asp:TableCell VerticalAlign="Top">
                 <asp:Label ID="Label1" runat="server" CssClass="title" Text="Rock Hard Academy" />

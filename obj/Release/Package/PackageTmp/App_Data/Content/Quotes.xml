@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Quotes
+  xmlns="http://www.rhmg.co.uk"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rhmg.co.uk Quotes.xsd">
+  <Quote
+    Who="Deb"
+    What="Its very good here. Well done."
+    When="22 January 2010"
+    Product="Rehearsals" />
+  <Quote
+    Who="Deb"
+    What="...you should be well proud of this place. What an amazing thing to have built."
+    When="22 January 2010"
+    Product="Rehearsals" />
+  <Quote
+    Who="Dan Webster"
+    What="The most professional recording studio and rehearsal room(s) I have ever had the pleasure to frequent"
+    When="15 December 2009"
+    Product="Rehearsals" />
+  <Quote
+    Who="Dan Webster"
+    What="I personally would only use Rock Hard studios in the Blackpool area, mainly for the sheer quality of facilities they provide which most definitely gives bands value for money."
+    When="8 December 2009"
+    Product="Rehearsals" />
+  <Quote
+    Who="Lesley Douglas"
+    What="We would (and have) recommended the studio to several other people."
+    When="8 December 2009"
+    Product="Rock Hard Academy Drum School" />
+  <Quote
+    Who="Charlie Cartmell"
+    What="Absolutely awesome. Great facilities, and now i've got a great cd!!"
+    When="6 December 2009"
+    Product="Recording" />
+  <Quote
+    Who="Levi Krebs-Levy"
+    What="It is the first studio I think of whenever anyone asks to jam."
+    When="5 December 2009"
+    Product="Recording and Rehearsals" />
+  <Quote
+    Who="Simon Morgan"
+    What="I recommend any band or artist to come and be recorded by it's well experienced engineers Dan and Andy."
+    When="5 December 2009"
+    Product="Recording and Rehearsals" />
+</Quotes>

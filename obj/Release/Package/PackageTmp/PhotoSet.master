@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true"
+    CodeBehind="PhotoSet.master.cs" Inherits="rhmgWebsite.Web.PhotoSet" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Table ID="MainTable" runat="server">
+        <asp:TableRow>
+            <asp:TableCell VerticalAlign="Top">
+                <asp:Label ID="TitleLabel" runat="server" CssClass="title"  />
+                <asp:Panel ID="Panel2" runat="server" CssClass="text" HorizontalAlign="Center">
+                    <asp:Image runat="server" ID="MainImage" />
+                    <br />
+                    <asp:Label runat="server" ID="DateTakenLabel" CssClass="tiny"></asp:Label>
+                </asp:Panel>
+                <asp:Table ID="Table1" runat="server" CellPadding="0" CellSpacing="0" Style="margin-top: -15px;">
+                    <asp:TableRow>
+                        <asp:TableCell Width="65px">
+                            <asp:HyperLink runat="server" ID="PrevLink" ImageUrl="~/images/Previous-icon.png"
+                                ToolTip="Previous Image" /></asp:TableCell>
+                        <asp:TableCell Width="700px">
+                            <asp:Label runat="server" ID="TextLabel"></asp:Label></asp:TableCell>
+                        <asp:TableCell>
+                            <asp:HyperLink runat="server" ID="NextLink" ImageUrl="~/images/Next-icon.png" ToolTip="Next Image" />
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="BottomBannerContentPlaceHolder"
+    runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="AdContentPlaceHolder" runat="server">
+</asp:Content>

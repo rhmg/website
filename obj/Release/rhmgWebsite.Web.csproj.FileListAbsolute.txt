@@ -1,0 +1,7 @@
+C:\rhmg\website\obj\Release\ResolveAssemblyReference.cache
+C:\rhmg\website\bin\App_Data\Photosets\BuildingTheStudio.xml
+C:\rhmg\website\bin\rhmgWebsite.Web.dll
+C:\rhmg\website\bin\rhmgWebsite.Web.pdb
+C:\rhmg\website\bin\SharpPieces.Web.Controls.pdb
+C:\rhmg\website\obj\Release\rhmgWebsite.Web.dll
+C:\rhmg\website\obj\Release\rhmgWebsite.Web.pdb

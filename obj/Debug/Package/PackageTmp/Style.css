@@ -1,0 +1,245 @@
+﻿body
+{
+    font-family: Tahoma;
+    background-image: url(images/backgrounds/background_bluewhite.png);
+    background-repeat: repeat;
+    font-size: 9pt;
+    margin: 0px;
+}
+
+.textTopBG
+{
+    height: 12px;
+    background-image: url(images/backgrounds/top825.png);
+    background-repeat: no-repeat;
+}
+.textMiddleBG
+{
+    background-image: url(images/backgrounds/middle825.png);
+    background-repeat: repeat-y;
+}
+.textBottomBG
+{
+    height: 12px;
+    background-image: url(images/backgrounds/bottom825.png);
+    background-repeat: no-repeat;
+}
+
+.brandingNavBack
+{
+    background-image: url(images/navbar_bg.png);
+    background-repeat: repeat-x;
+}
+
+.sidePanelTop
+{
+    height: 10px;
+    background-image: url(images/backgrounds/sidebar_top.png);
+}
+.sidePanelMiddle
+{
+    background-image: url(images/backgrounds/sidebar_middle.png);
+    background-repeat: repeat-y;
+}
+.sidePanelBottom
+{
+    height: 10px;
+    background-image: url(images/backgrounds/sidebar_bottom.png);
+}
+
+.textTopBG600
+{
+    height: 12px;
+    background-image: url(images/backgrounds/top600.png);
+}
+.textMiddleBG600
+{
+    background-image: url(images/backgrounds/middle600.png);
+    background-repeat: repeat-y;
+}
+.textBottomBG600
+{
+    height: 12px;
+    background-image: url(images/backgrounds/bottom600.png);
+}
+
+.title
+{
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.errorTitle
+{
+    font-size: 14pt;
+    font-weight: bold;
+    color: Red;
+}
+.subTitle
+{
+    font-size: 11pt;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.errorSubTitle
+{
+    font-size: 11pt;
+    font-weight: bold;
+    color: Red;
+}
+.subText
+{
+    color: #C1C9E1;
+}
+.text
+{
+    margin: 8px;
+    text-align: justify;
+}
+.textNoMargin
+{
+    text-align: justify;
+}
+.highlight
+{
+    color: red;
+}
+.bold
+{
+    font-weight: bold;
+}
+.tiny
+{
+    font-size: 7pt;
+}
+.quoteText
+{
+    font-size: 18px;
+    font-family: Courier New;
+    font-weight: bold;
+}
+.quoteWhenAndWho
+{
+    font-size: 14px;
+    font-family: Courier New;
+}
+
+
+.navLink
+{
+    color: White;
+    text-decoration: none;
+}
+.navLinkInactive
+{
+    color: White;
+    text-decoration: none;
+    font-weight: bold;
+}
+.standardLink
+{
+    color: Black;
+    text-decoration: none;
+}
+.standardLinkInactive
+{
+    color: Black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sidepanelLink
+{
+    color: #C1C9E1;
+    text-decoration: none;
+    margin-left: 3px;
+}
+.sidepanelLinkInactive
+{
+    color: #C1C9E1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.bandSessionLink
+{
+    color: Black;
+    text-decoration: none;
+    font-size: 13pt;
+}
+.boldLink
+{
+    font-family: comic sans MS;
+    font-size: 35pt;
+}
+.externalLink
+{
+    color: Black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#modalPage
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.modalBackground
+{
+    filter: Alpha(Opacity=40);
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background-color: #999999;
+    position: absolute;
+    z-index: 500;
+    top: 0px;
+    left: 0px;
+}
+.modalContainer
+{
+    top: 10px;
+    left: 15%;
+    border: solid 4px black;
+    position: absolute;
+    z-index: 750;
+}
+
+
+
+.date
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.room1
+{
+    color: blue;
+}
+.room2
+{
+    color: red;
+}
+.room3
+{
+    color: green;
+}
+.room4
+{
+    color: light blue;
+}
+.unknownRoom
+{
+    color: black;
+}
+
+
+
+.definition
+{
+    font-weight: bold;
+}

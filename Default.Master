@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/Base.master" CodeBehind="Default.master.cs"
+    Inherits="rhmgWebsite.Web.Default" %>
+
+<%@ Register Src="CustomControls/BrandingNavBar.ascx" TagName="BrandingNavBar" TagPrefix="uc1" %>
+<%@ Register Src="CustomControls/ContactUsPanel.ascx" TagName="ContactUsPanel" TagPrefix="uc2" %>
+<%@ Register Src="CustomControls/SidePanel.ascx" TagName="SidePanel" TagPrefix="uc3" %>
+<%@ Register Src="CustomControls/Bookmark.ascx" TagName="SidePanel" TagPrefix="uc4" %>
+<%@ Register Src="CustomControls/Newsletter.ascx" TagName="Newsletter" TagPrefix="uc5" %>
+<asp:Content ContentPlaceHolderID="CentralContent" runat="server">
+    <asp:Table runat="server" ID="mainTable" Width="900px" CellPadding="0" CellSpacing="0">
+        <asp:TableRow ID="TableRow2" runat="server" VerticalAlign="Top">
+            <asp:TableCell ID="TableCell6" runat="server" RowSpan="4">
+                <uc3:SidePanel ID="SidePanel1" runat="server" />
+            </asp:TableCell>
+            <asp:TableCell ID="TableCell7" runat="server" ColumnSpan="2" Width="825" CssClass="textTopBG">
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow ID="TableRow3" runat="server" VerticalAlign="Top">
+            <asp:TableCell ColumnSpan="2" CssClass="textMiddleBG" Width="825">
+                <asp:Panel ID="Panel1" runat="server" Width="815" Style="margin-left: 5px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:Panel>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow ID="TableRow4" runat="server" VerticalAlign="Top">
+            <asp:TableCell ColumnSpan="2" CssClass="textBottomBG">&nbsp;</asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow ID="TableRow5" runat="server" VerticalAlign="Top">
+            <asp:TableCell ColumnSpan="2">
+                <asp:ContentPlaceHolder ID="BottomBannerContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="AdContentPlaceHolder2" runat="server">
+    <asp:ContentPlaceHolder ID="AdContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

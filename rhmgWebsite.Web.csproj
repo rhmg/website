@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rhmgWebsite.Web</RootNamespace>
+    <AssemblyName>rhmgWebsite.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{AEA9A832-79C7-4FB5-816A-738F24069450}|..\rhmgWebsite\rhmgWebsite.csproj|ClientBin|False</SilverlightApplicationList>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpPieces.Web.Controls, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharpPieces.DemoApp\bin\SharpPieces.Web.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\rhmgWebsite.xap" />
+    <Content Include="rhmgWebsiteTestPage.aspx" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Academy.aspx.cs">
+      <DependentUpon>Academy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academy.aspx.designer.cs">
+      <DependentUpon>Academy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AndrewCox.aspx.cs">
+      <DependentUpon>AndrewCox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AndrewCox.aspx.designer.cs">
+      <DependentUpon>AndrewCox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base.Master.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base.Master.designer.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingTheStudio.aspx.cs">
+      <DependentUpon>BuildingTheStudio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuildingTheStudio.aspx.designer.cs">
+      <DependentUpon>BuildingTheStudio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CabaretArtists.aspx.cs">
+      <DependentUpon>CabaretArtists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CabaretArtists.aspx.designer.cs">
+      <DependentUpon>CabaretArtists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChrisHilton.aspx.cs">
+      <DependentUpon>ChrisHilton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChrisHilton.aspx.designer.cs">
+      <DependentUpon>ChrisHilton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Bookmark.ascx.cs">
+      <DependentUpon>Bookmark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Bookmark.ascx.designer.cs">
+      <DependentUpon>Bookmark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\BrandingNavBar.ascx.cs">
+      <DependentUpon>BrandingNavBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\BrandingNavBar.ascx.designer.cs">
+      <DependentUpon>BrandingNavBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Classes.cs" />
+    <Compile Include="CustomControls\ContactUsPanel.ascx.cs">
+      <DependentUpon>ContactUsPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ContactUsPanel.ascx.designer.cs">
+      <DependentUpon>ContactUsPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomerQuoteDisplay.ascx.cs">
+      <DependentUpon>CustomerQuoteDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomerQuoteDisplay.ascx.designer.cs">
+      <DependentUpon>CustomerQuoteDisplay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\HomeSideBar.ascx.cs">
+      <DependentUpon>HomeSideBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\HomeSideBar.ascx.designer.cs">
+      <DependentUpon>HomeSideBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Newsletter.ascx.cs">
+      <DependentUpon>Newsletter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Newsletter.ascx.designer.cs">
+      <DependentUpon>Newsletter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\SidebarNavBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\SidePanel.ascx.cs">
+      <DependentUpon>SidePanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\SidePanel.ascx.designer.cs">
+      <DependentUpon>SidePanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\StudioSessionNavigator.ascx.cs">
+      <DependentUpon>StudioSessionNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\StudioSessionNavigator.ascx.designer.cs">
+      <DependentUpon>StudioSessionNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\StudiosSideBar.ascx.cs">
+      <DependentUpon>StudiosSideBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\StudiosSideBar.ascx.designer.cs">
+      <DependentUpon>StudiosSideBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\ThumbnailNavigator.ascx.cs">
+      <DependentUpon>ThumbnailNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ThumbnailNavigator.ascx.designer.cs">
+      <DependentUpon>ThumbnailNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DanAtkinson.aspx.cs">
+      <DependentUpon>DanAtkinson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanAtkinson.aspx.designer.cs">
+      <DependentUpon>DanAtkinson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Downloads.aspx.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downloads.aspx.designer.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExploreTheStudio.aspx.cs">
+      <DependentUpon>ExploreTheStudio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExploreTheStudio.aspx.designer.cs">
+      <DependentUpon>ExploreTheStudio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FreeRecordingAndRehearsalsDeal.aspx.cs">
+      <DependentUpon>FreeRecordingAndRehearsalsDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FreeRecordingAndRehearsalsDeal.aspx.designer.cs">
+      <DependentUpon>FreeRecordingAndRehearsalsDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HowToFindUs.aspx.cs">
+      <DependentUpon>HowToFindUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HowToFindUs.aspx.designer.cs">
+      <DependentUpon>HowToFindUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="KaraokeSingers.aspx.cs">
+      <DependentUpon>KaraokeSingers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KaraokeSingers.aspx.designer.cs">
+      <DependentUpon>KaraokeSingers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Links.aspx.designer.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MattSellers.aspx.cs">
+      <DependentUpon>MattSellers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MattSellers.aspx.designer.cs">
+      <DependentUpon>MattSellers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoSet.master.cs">
+      <DependentUpon>PhotoSet.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoSet.master.designer.cs">
+      <DependentUpon>PhotoSet.master</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoshootWithNaz.aspx.cs">
+      <DependentUpon>PhotoshootWithNaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoshootWithNaz.aspx.designer.cs">
+      <DependentUpon>PhotoshootWithNaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopStarParties.aspx.cs">
+      <DependentUpon>PopStarParties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopStarParties.aspx.designer.cs">
+      <DependentUpon>PopStarParties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordingTheSilvertones.aspx.cs">
+      <DependentUpon>RecordingTheSilvertones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecordingTheSilvertones.aspx.designer.cs">
+      <DependentUpon>RecordingTheSilvertones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitemap.aspx.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitemap.aspx.designer.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Studios.aspx.cs">
+      <DependentUpon>Studios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Studios.aspx.designer.cs">
+      <DependentUpon>Studios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudioSessions.aspx.cs">
+      <DependentUpon>StudioSessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudioSessions.aspx.designer.cs">
+      <DependentUpon>StudioSessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Studios_bookings.aspx.cs">
+      <DependentUpon>Studios_bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Studios_bookings.aspx.designer.cs">
+      <DependentUpon>Studios_bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Studios_recording.aspx.cs">
+      <DependentUpon>Studios_recording.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Studios_recording.aspx.designer.cs">
+      <DependentUpon>Studios_recording.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Studios_rehearsals.aspx.cs">
+      <DependentUpon>Studios_rehearsals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Studios_rehearsals.aspx.designer.cs">
+      <DependentUpon>Studios_rehearsals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Studios_theteam.aspx.cs">
+      <DependentUpon>Studios_theteam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Studios_theteam.aspx.designer.cs">
+      <DependentUpon>Studios_theteam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndConditions.aspx.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsAndConditions.aspx.designer.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thankyou.aspx.cs">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thankyou.aspx.designer.cs">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Academy.aspx" />
+    <Content Include="Academy\academy1.html" />
+    <Content Include="Academy\index.html" />
+    <Content Include="Academy\index2.html" />
+    <Content Include="AndrewCox.aspx" />
+    <Content Include="audio\Broken Number.mp3" />
+    <Content Include="audio\Natural Room Drum Solo.mp3" />
+    <Content Include="audio\Pink - So What.mp3" />
+    <Content Include="audio\Pro Tools Mixed Drums.mp3" />
+    <Content Include="BuildingTheStudio.aspx" />
+    <Content Include="App_Data\Photosets\BuildingTheStudio.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CabaretArtists.aspx" />
+    <Content Include="ChrisHilton.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="CustomControls\Bookmark.ascx" />
+    <Content Include="CustomControls\BrandingNavBar.ascx" />
+    <Content Include="CustomControls\ContactUsPanel.ascx" />
+    <Content Include="CustomControls\HomeSideBar.ascx" />
+    <Content Include="CustomControls\Newsletter.ascx" />
+    <Content Include="CustomControls\SidePanel.ascx" />
+    <Content Include="CustomControls\StudiosSideBar.ascx" />
+    <Content Include="DanAtkinson.aspx" />
+    <Content Include="delorie.htm" />
+    <Content Include="Downloads.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="images\backgrounds\background_bluewhite.png" />
+    <Content Include="images\backgrounds\bottom600.png" />
+    <Content Include="images\backgrounds\bottom825.png" />
+    <Content Include="images\backgrounds\full.png" />
+    <Content Include="images\backgrounds\middle600.png" />
+    <Content Include="images\backgrounds\middle825.png" />
+    <Content Include="images\backgrounds\sidebar_bottom.png" />
+    <Content Include="images\backgrounds\sidebar_middle.png" />
+    <Content Include="images\backgrounds\sidebar_top.png" />
+    <Content Include="images\backgrounds\top600.png" />
+    <Content Include="images\backgrounds\top825.png" />
+    <Content Include="images\banners\Recording Studio Christmas Blackpool Shot 2.jpg" />
+    <Content Include="images\banners\Recording Studio Control Room Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Control Surface Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Corridor Christmas Blackpool Shot 1.jpg" />
+    <Content Include="images\banners\Recording Studio Drum Kit Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Fader Wave Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Farfisa Organ Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Hand On Desk Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Live Room Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Live Room Full Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Low Angle Across Desk.jpg" />
+    <Content Include="images\banners\Recording Studio Low Desk Shot Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Outboard Blackpool.jpg" />
+    <Content Include="images\banners\Recording Studio Producer At Work Blackpool.jpg" />
+    <Content Include="images\BlueDiamondTiny.png" />
+    <Content Include="images\how to pay for your studio time.png" />
+    <Content Include="images\links\16x16-digg-guy.png" />
+    <Content Include="images\links\bandmeup.jpg" />
+    <Content Include="images\links\cylex.jpg" />
+    <Content Include="images\links\facebook-icon.png" />
+    <Content Include="images\links\freeindex.jpg" />
+    <Content Include="images\links\Myspace_Logo.jpg" />
+    <Content Include="images\links\twitter.png" />
+    <Content Include="images\links\ufindus.jpg" />
+    <Content Include="images\links\yell.jpg" />
+    <Content Include="images\Next-icon.png" />
+    <Content Include="images\pdf.png" />
+    <Content Include="images\photos\making_of\1 Rock Hard Studios - The empty unit.jpg" />
+    <Content Include="images\photos\making_of\10 Rock Hard Studios - Looking back down the unit.jpg" />
+    <Content Include="images\photos\making_of\11 Rock Hard Studios - Room 4 all shiny and new.jpg" />
+    <Content Include="images\photos\making_of\12 Rock Hard Studios - Starting to build the Live Room.jpg" />
+    <Content Include="images\photos\making_of\13 Rock Hard Studios - The Live Room taking shape.jpg" />
+    <Content Include="images\photos\making_of\14 Rock Hard Studios - Studding the walls of the Live Room.jpg" />
+    <Content Include="images\photos\making_of\15 Rock Hard Studios - The plaster board goes on in the Live Room.jpg" />
+    <Content Include="images\photos\making_of\16 Rock Hard Studios - Installing lights in the Live Room.jpg" />
+    <Content Include="images\photos\making_of\17 Rock Hard Studios - Finishing touches to the Live Room.jpg" />
+    <Content Include="images\photos\making_of\18 Rock Hard Studios - The Live Room in all its glory.jpg" />
+    <Content Include="images\photos\making_of\19 Rock Hard Studios - Room 2 ready for a band.jpg" />
+    <Content Include="images\photos\making_of\2 Rock Hard Studios - Clearing and drying the unit.jpg" />
+    <Content Include="images\photos\making_of\20 Rock Hard Studios - Starting to clear the common areas.jpg" />
+    <Content Include="images\photos\making_of\21 Rock Hard Studios - Rambo looking through the wall.jpg" />
+    <Content Include="images\photos\making_of\22 Rock Hard Studios - The entrance and corridor takes shape.jpg" />
+    <Content Include="images\photos\making_of\3 Rock Hard Studios - taking down the old mezzanine.jpg" />
+    <Content Include="images\photos\making_of\4 Rock Hard Studios - Looking up the unit.jpg" />
+    <Content Include="images\photos\making_of\5 Rock Hard Studios - Phil teaching Dan how to lay bricks.jpg" />
+    <Content Include="images\photos\making_of\6 Rock Hard Studios - Room 4 taking shape.jpg" />
+    <Content Include="images\photos\making_of\7 Rock Hard Studios - Working on getting electricity.jpg" />
+    <Content Include="images\photos\making_of\8 Rock Hard Studios - Team work while building the Chill Out Room.jpg" />
+    <Content Include="images\photos\making_of\9 Rock Hard Studios - Rooms 3 and 4 taking shape.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool A band enjoying a rehearsal.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool A band enjoying a rehearsal_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool Control Surface Digidesign Protools HD2 C24.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool Control Surface Digidesign Protools HD2 C24_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool Our fully stocked kitchen.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool Our fully stocked kitchen_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool Rehearsal Room 4 including Sonor drum kit.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool Rehearsal Room 4 including Sonor drum kit_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The corridor with rehearsal rooms on the left and recording studio on the right.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The corridor with rehearsal rooms on the left and recording studio on the right_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The Live room viewed from the Chill Out Room.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The Live room viewed from the Chill Out Room_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The Live room with our Drum World Custom Maple Drumkit.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The Live room with our Drum World Custom Maple Drumkit_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The view from the control room into the Live Room.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The view from the control room into the Live Room_.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The view from the Drum Kit.jpg" />
+    <Content Include="images\photos\explore_the_studio\Rock Hard Studios Blackpool The view from the Drum Kit_.jpg" />
+    <Content Include="images\Previous-icon.png" />
+    <Content Include="images\products\Cabaret Artists - click here for more information.png" />
+    <Content Include="images\products\Drum Lessons - click here for more information.png" />
+    <Content Include="images\products\Pop Star Parties - be a pop star for a day.png" />
+    <Content Include="images\products\Pop Star Parties - click here for more information.png" />
+    <Content Include="images\products\Pop Star Parties - fun in the studio.png" />
+    <Content Include="images\products\Pro Audio Recording - click here for more information.png" />
+    <Content Include="images\products\Rehearsal Rooms - click here for more information.png" />
+    <Content Include="images\Rock Hard Academy - Blackpool%27s Academy of Musical Excellence, for drum tuition and more.png" />
+    <Content Include="images\Rock Hard Music Group - Running Blackpool%27s best recording and rehearsal studios.png" />
+    <Content Include="images\Rock Hard Studios - Blackpool%27s best recording and rehearsal studios.png" />
+    <Content Include="images\special_offers\Live demo recording - Special Offer Recording Studio Blackpool.png" />
+    <Content Include="images\special_offers\Pay monthly for your rehearsal session at rehearsal studio in Blackpool Special Offer.png" />
+    <Content Include="images\us\andrew making sausages_.jpg" />
+    <Content Include="images\us\andrew playing in his ska band_.jpg" />
+    <Content Include="images\us\andrew producer blackpool.jpg" />
+    <Content Include="images\us\andrew raising money for movember_.jpg" />
+    <Content Include="images\us\andrew-producer-blackpool_.jpg" />
+    <Content Include="images\us\chris education for music blackpool.jpg" />
+    <Content Include="images\us\chris education for music blackpool_.jpg" />
+    <Content Include="images\us\chris lifting bricks building the studio_.jpg" />
+    <Content Include="images\us\chris with a snowman_.jpg" />
+    <Content Include="images\us\chris with fiancee looking smart in a suit_.jpg" />
+    <Content Include="images\us\dan drumming on a pearl drum kit at tommyfest_.jpg" />
+    <Content Include="images\us\dan producer blackpool.jpg" />
+    <Content Include="images\us\dan producer blackpool_.jpg" />
+    <Content Include="images\us\dan suited and booted_.jpg" />
+    <Content Include="images\us\Dan with baby_.jpg" />
+    <Content Include="images\us\matt drum tutor teaching drums in blackpool.jpg" />
+    <Content Include="images\us\matt drum tutor teaching drums in blackpool_.jpg" />
+    <Content Include="images\us\matt drumming from behind_.jpg" />
+    <Content Include="images\us\matt drumming in his band_.jpg" />
+    <Content Include="images\us\matt sat at the drums at rock hard studios_.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Default.Master" />
+    <Content Include="images\address.png" />
+    <Content Include="images\Banner.png" />
+    <Content Include="images\contactdetails.JPG" />
+    <Content Include="images\drumroomsmall.png" />
+    <Content Include="images\email.png" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\navbar_bg.png" />
+    <Content Include="images\phone.png" />
+    <Content Include="images\rockhardacademy400.gif" />
+    <Content Include="Links.aspx" />
+    <Content Include="MattSellers.aspx" />
+    <Content Include="player.swf" />
+    <Content Include="PopStarParties.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="rhmg_sitemap.xml" />
+    <Content Include="Sitemap.aspx" />
+    <Content Include="Studios.aspx" />
+    <Content Include="Studios_bookings.aspx" />
+    <Content Include="Studios_recording.aspx" />
+    <Content Include="Studios_rehearsals.aspx" />
+    <Content Include="Studios_theteam.aspx" />
+    <Content Include="Style.css" />
+    <Content Include="swfobject.js" />
+    <Content Include="TermsAndConditions.aspx" />
+    <Content Include="Thankyou.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\Content\Quotes.xsd" />
+    <Content Include="Base.Master" />
+    <None Include="Downloads\Drum School Poster.pdf" />
+    <None Include="Downloads\Free Recording Offer.pdf" />
+    <None Include="Downloads\Full Equipment List.pdf" />
+    <None Include="Downloads\Guitar Academy Poster.pdf" />
+    <None Include="Downloads\Spec List.pdf" />
+    <None Include="Downloads\Special Offers.pdf" />
+    <Content Include="App_Data\Content\Quotes.xml" />
+    <Content Include="App_Data\Photosets\PhotoshootWithNaz.xml" />
+    <Content Include="audio\Ballad for the Smart Arses.mp3" />
+    <Content Include="audio\The Horn Crazy Train.mp3" />
+    <Content Include="audio\Valves Fine Day.mp3" />
+    <Content Include="CustomControls\CustomerQuoteDisplay.ascx" />
+    <Content Include="CustomControls\StudioSessionNavigator.ascx" />
+    <Content Include="CustomControls\ThumbnailNavigator.ascx" />
+    <Content Include="ExploreTheStudio.aspx" />
+    <Content Include="FreeRecordingAndRehearsalsDeal.aspx" />
+    <Content Include="HowToFindUs.aspx" />
+    <Content Include="images\backgrounds\rhmgAcademy_bluebox.jpg" />
+    <Content Include="images\backgrounds\rhmgAcademy_pictures.png" />
+    <Content Include="images\backgrounds\rhmgAcademy_web.jpg" />
+    <Content Include="images\banners\Looking through from Control Room Into Live Room with singer Recording at Blackpool Recording Studio.jpg" />
+    <Content Include="images\follow link.png" />
+    <Content Include="images\logo_75.gif" />
+    <Content Include="images\Next-icon-bw.png" />
+    <Content Include="images\photos\making_of\1 Rock Hard Studios - The empty unit_.jpg" />
+    <Content Include="images\photos\making_of\10 Rock Hard Studios - Looking back down the unit_.jpg" />
+    <Content Include="images\photos\making_of\11 Rock Hard Studios - Room 4 all shiny and new_.jpg" />
+    <Content Include="images\photos\making_of\12 Rock Hard Studios - Starting to build the Live Room_.jpg" />
+    <Content Include="images\photos\making_of\13 Rock Hard Studios - The Live Room taking shape_.jpg" />
+    <Content Include="images\photos\making_of\14 Rock Hard Studios - Studding the walls of the Live Room_.jpg" />
+    <Content Include="images\photos\making_of\15 Rock Hard Studios - The plaster board goes on in the Live Room_.jpg" />
+    <Content Include="images\photos\making_of\16 Rock Hard Studios - Installing lights in the Live Room_.jpg" />
+    <Content Include="images\photos\making_of\17 Rock Hard Studios - Finishing touches to the Live Room_.jpg" />
+    <Content Include="images\photos\making_of\18 Rock Hard Studios - The Live Room in all its glory_.jpg" />
+    <Content Include="images\photos\making_of\19 Rock Hard Studios - Room 2 ready for a band_.jpg" />
+    <Content Include="images\photos\making_of\2 Rock Hard Studios - Clearing and drying the unit_.jpg" />
+    <Content Include="images\photos\making_of\20 Rock Hard Studios - Starting to clear the common areas_.jpg" />
+    <Content Include="images\photos\making_of\21 Rock Hard Studios - Rambo looking through the wall_.jpg" />
+    <Content Include="images\photos\making_of\22 Rock Hard Studios - The entrance and corridor takes shape_.jpg" />
+    <Content Include="images\photos\making_of\3 Rock Hard Studios - taking down the old mezzanine_.jpg" />
+    <Content Include="images\photos\making_of\4 Rock Hard Studios - Looking up the unit_.jpg" />
+    <Content Include="images\photos\making_of\5 Rock Hard Studios - Phil teaching Dan how to lay bricks_.jpg" />
+    <Content Include="images\photos\making_of\6 Rock Hard Studios - Room 4 taking shape_.jpg" />
+    <Content Include="images\photos\making_of\7 Rock Hard Studios - Working on getting electricity_.jpg" />
+    <Content Include="images\photos\making_of\8 Rock Hard Studios - Team work while building the Chill Out Room_.jpg" />
+    <Content Include="images\photos\making_of\9 Rock Hard Studios - Rooms 3 and 4 taking shape_.jpg" />
+    <Content Include="images\photos\naz_session\1 Karl singing his heart out at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\1 Karl singing his heart out at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\10 Dan attacking the kit in the Live Room at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\10 Dan attacking the kit in the Live Room at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\11 Black and white of Dan laying into his cymbals on the studio kit at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\11 Black and white of Dan laying into his cymbals on the studio kit at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\12 Dan in full flow on the drum kit at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\12 Dan in full flow on the drum kit at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\13 Dan and Karl laying down a groove in the Live Room at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\13 Dan and Karl laying down a groove in the Live Room at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\14 Karl playing bass at Rock Hard Studios Recording Studio.jpg" />
+    <Content Include="images\photos\naz_session\14 Karl playing bass at Rock Hard Studios Recording Studio_.jpg" />
+    <Content Include="images\photos\naz_session\15 Stick on cymbal taken by Naz at Rock Hard Studios Recording Studio.jpg" />
+    <Content Include="images\photos\naz_session\15 Stick on cymbal taken by Naz at Rock Hard Studios Recording Studio_.jpg" />
+    <Content Include="images\photos\naz_session\16 Black and white detail of bass guitar.jpg" />
+    <Content Include="images\photos\naz_session\16 Black and white detail of bass guitar_.jpg" />
+    <Content Include="images\photos\naz_session\17 Looking through from the Live Room into the Control room with Karl reflected in the glass.jpg" />
+    <Content Include="images\photos\naz_session\17 Looking through from the Live Room into the Control room with Karl reflected in the glass_.jpg" />
+    <Content Include="images\photos\naz_session\18 Karl Dan and Andrew jamming in the Live Room at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\18 Karl Dan and Andrew jamming in the Live Room at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\2 Karl belting a song into the Neumann TLM103 at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\2 Karl belting a song into the Neumann TLM103 at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\3 Karl showing the passion of performing at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\3 Karl showing the passion of performing at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\4 Karl and a Neumann TLM103 - in perfect unison.jpg" />
+    <Content Include="images\photos\naz_session\4 Karl and a Neumann TLM103 - in perfect unison_.jpg" />
+    <Content Include="images\photos\naz_session\5 Karl rocking out with total disregard for the consequences at Rock Hard Studios Recording Studio.jpg" />
+    <Content Include="images\photos\naz_session\5 Karl rocking out with total disregard for the consequences at Rock Hard Studios Recording Studio_.jpg" />
+    <Content Include="images\photos\naz_session\6 Dan and Andrew recording Karl in Rock Hard Studios Recording Studio.jpg" />
+    <Content Include="images\photos\naz_session\6 Dan and Andrew recording Karl in Rock Hard Studios Recording Studio_.jpg" />
+    <Content Include="images\photos\naz_session\7 Looking through the window from the Control Room to the Live Room at Rock Hard Studios Recording Studio.jpg" />
+    <Content Include="images\photos\naz_session\7 Looking through the window from the Control Room to the Live Room at Rock Hard Studios Recording Studio_.jpg" />
+    <Content Include="images\photos\naz_session\8 An arty photograph of the Digidesign C24 control surface in the Recording Studio at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\naz_session\8 An arty photograph of the Digidesign C24 control surface in the Recording Studio at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\naz_session\9 Matt warming up at Rock Hard Studios on the kit that we use to teach drums in Rock Hard Academy.jpg" />
+    <Content Include="images\photos\naz_session\9 Matt warming up at Rock Hard Studios on the kit that we use to teach drums in Rock Hard Academy_.jpg" />
+    <Content Include="images\photos\silvertones_session\1 Silvertones recording their album at Rock Hard Studios - the view from the Chill Out Room.jpg" />
+    <Content Include="images\photos\silvertones_session\1 Silvertones recording their album at Rock Hard Studios - the view from the Chill Out Room_.jpg" />
+    <Content Include="images\photos\silvertones_session\10 Dan focussed on keeping to the click while recording Silvertones songs at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\10 Dan focussed on keeping to the click while recording Silvertones songs at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\11 Taking a breath of fresh air during the Silvertones recording session.jpg" />
+    <Content Include="images\photos\silvertones_session\11 Taking a breath of fresh air during the Silvertones recording session_.jpg" />
+    <Content Include="images\photos\silvertones_session\12 Andrew deep in thought whilst recording Silvertones backing tracks at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\12 Andrew deep in thought whilst recording Silvertones backing tracks at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\13 Tom doing lead guitar overdubs on Silvertones songs at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\13 Tom doing lead guitar overdubs on Silvertones songs at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\14 Billy in the Live Room recording backing tracks for the Silvertones at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\14 Billy in the Live Room recording backing tracks for the Silvertones at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\15 Anders having a bacon butty cooked in the kitchen at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\15 Anders having a bacon butty cooked in the kitchen at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\16 Dan laying down a solid groove with Rock Hard Studios%27 C1000 prominently displayed.jpg" />
+    <Content Include="images\photos\silvertones_session\16 Dan laying down a solid groove with Rock Hard Studios%27 C1000 prominently displayed_.jpg" />
+    <Content Include="images\photos\silvertones_session\17 A look of total concentration from Anders during a take for the Silvertones at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\17 A look of total concentration from Anders during a take for the Silvertones at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\18 A moment of levity during playback of a Silvertones track in Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\18 A moment of levity during playback of a Silvertones track in Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\19 Billy captured mid-phrase during the warm prior to recording another Silvertones track at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\19 Billy captured mid-phrase during the warm prior to recording another Silvertones track at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\2 Billy singing guide vocals while laying down backing tracks for the Silvertones at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\2 Billy singing guide vocals while laying down backing tracks for the Silvertones at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\20 Tom taking a close interest in the recording of the backing tracks for Silvertones at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\20 Tom taking a close interest in the recording of the backing tracks for Silvertones at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\21 Andrew and his famous Purple Penguin cup full of tea at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\21 Andrew and his famous Purple Penguin cup full of tea at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\22 Silvertones taking a fresh air break to the shop and pub during their session at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\22 Silvertones taking a fresh air break to the shop and pub during their session at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\23 The obligatory rock band photograph at the end of the corridor in Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\23 The obligatory rock band photograph at the end of the corridor in Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\24 Billy and Anders mid take during Silvertones recording session at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\24 Billy and Anders mid take during Silvertones recording session at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\3 Dan recording drums for the Silvertones at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\3 Dan recording drums for the Silvertones at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\4 Andrew and Dan discussing the sounds during the Silvertones session at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\4 Andrew and Dan discussing the sounds during the Silvertones session at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\5 Tom recording guitar for the Silvertones at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\5 Tom recording guitar for the Silvertones at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\6 Billy laying down rhythm guitar during the Silvertones recording session at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\6 Billy laying down rhythm guitar during the Silvertones recording session at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\7 Billy and Tom leaving the Live Room after a successful take at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\7 Billy and Tom leaving the Live Room after a successful take at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\8 Anders in the groove playing the bass line to a Silvertones song while recording at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\8 Anders in the groove playing the bass line to a Silvertones song while recording at Rock Hard Studios_.jpg" />
+    <Content Include="images\photos\silvertones_session\9 The Silvertones and Management sitting in the Control Room listening to a mix at Rock Hard Studios.jpg" />
+    <Content Include="images\photos\silvertones_session\9 The Silvertones and Management sitting in the Control Room listening to a mix at Rock Hard Studios_.jpg" />
+    <Content Include="images\Previous-icon-bw.png" />
+    <Content Include="images\products\Karaoke Singers - click here for more information.png" />
+    <Content Include="images\products\Karaoke Singers - Fancy yourself as a singer.png" />
+    <Content Include="images\Quotes_Left.png" />
+    <Content Include="images\Quotes_Right.png" />
+    <Content Include="KaraokeSingers.aspx" />
+    <Content Include="PhotoSet.master" />
+    <Content Include="PhotoshootWithNaz.aspx" />
+    <Content Include="RecordingTheSilvertones.aspx" />
+    <Content Include="StudioSessions.aspx" />
+    <Content Include="App_Data\Photosets\ExploreTheStudio.xml" />
+    <Content Include="App_Data\Photosets\RecordingTheSilvertones.xml" />
+    <None Include="App_Data\Photosets\PhotoSets.xsd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1300</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

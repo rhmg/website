@@ -1,0 +1,2 @@
+Redirect 301 /index.html http://www.rhmg.co.uk/index.aspx
+ErrorDocument 404 /notfound.html

@@ -19,6 +19,9 @@
             <asp:TableCell VerticalAlign="Top" HorizontalAlign="Center">
                 <asp:Panel ID="Panel5" runat="server" ScrollBars="Auto" Width="80%" Wrap="false"
                     CssClass="text" HorizontalAlign="Center">
+                    <uc1:ThumbnailNavigator runat="server" ID="ThumbnailNavigator5" />
+                    <br />
+                    <br />
                     <uc1:ThumbnailNavigator runat="server" ID="ThumbnailNavigator1" />
                     <br />
                     <br />

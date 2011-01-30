@@ -24,7 +24,7 @@
         </asp:TableCell>
         <asp:TableCell ColumnSpan="3" Wrap="false" HorizontalAlign="Left">
             <asp:Label runat="server">Unit 4, Cocker Street Trading Estate</asp:Label><br />
-            <asp:Label runat="server">Blackpool FY1 2EP</asp:Label>
+            <asp:Label runat="server">Blackpool Lancashire FY1 2EP</asp:Label>
         </asp:TableCell>
     </asp:TableRow>
 </asp:Table>

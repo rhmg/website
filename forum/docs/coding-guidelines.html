@@ -69,7 +69,7 @@
 		<li><a href="#general">General Guidelines</a></li>
 	</ol>
 	</li>
-	<li><a href="#styling">Styling</a></li>
+	<li><a href="#styling">Styling</a>
 	<ol style="list-style-type: lower-roman;">
 		<li><a href="#cfgfiles">Style Config Files</a></li>
 		<li><a href="#genstyling">General Styling Rules</a></li>
@@ -90,10 +90,9 @@
 	<li><a href="#vcs">VCS Guidelines</a>
 	<ol style="list-style-type: lower-roman;">
 		<li><a href="#repostruct">Repository structure</a></li>
-		<li><a href="#commitmessage">Commit messages</a></li>
+		<li><a href="#commitmessage">Commit Messages and Repository Rules</a></li>
 	</ol>
 	</li>
-	<li><a href="#changes">Guidelines Changelog</a></li>
 	<li><a href="#disclaimer">Copyright and disclaimer</a></li>
 </ol>
 
@@ -125,7 +124,7 @@
 	<p>If entered with tabs (replace the {TAB}) both equal signs need to be on the same column.</p>
 
 	<h3>Linefeeds:</h3>
-	<p>Ensure that your editor is saving files in the UNIX (LF) line ending format. This means that lines are terminated with a newline, not with Windows Line endings (CR/LF combo) as they are on Win32 or Classic Mac (CR) Line endings. Any decent editor should be able to do this, but it might not always be the default setting. Know your editor. If you want advice for an editor for your Operating System, just ask one of the developers. Some of them do their editing on Win32.
+	<p>Ensure that your editor is saving files in the UNIX (LF) line ending format. This means that lines are terminated with a newline, not with Windows Line endings (CR/LF combo) as they are on Win32 or Classic Mac (CR) Line endings. Any decent editor should be able to do this, but it might not always be the default setting. Know your editor. If you want advice for an editor for your Operating System, just ask one of the developers. Some of them do their editing on Win32.</p>
 
 	<a name="fileheader"></a><h3>1.ii. File Header</h3>
 
@@ -203,7 +202,7 @@ class ...
 				<li><code>/includes/db/firebird.php</code><br />Firebird/Interbase Database Abstraction Layer</li>
 				<li><code>/includes/db/msssql.php</code><br />MSSQL Database Abstraction Layer</li>
 				<li><code>/includes/db/mssql_odbc.php</code><br />MSSQL ODBC Database Abstraction Layer for MSSQL</li>
-				<li><code>/includes/db/mysql.php</code><br />MySQL Database Abstraction Layer for MySQL 3.x/4.0.x/4.1.x/5.x
+				<li><code>/includes/db/mysql.php</code><br />MySQL Database Abstraction Layer for MySQL 3.x/4.0.x/4.1.x/5.x</li>
 				<li><code>/includes/db/mysqli.php</code><br />MySQLi Database Abstraction Layer</li>
 				<li><code>/includes/db/oracle.php</code><br />Oracle Database Abstraction Layer</li>
 				<li><code>/includes/db/postgres.php</code><br />PostgreSQL Database Abstraction Layer</li>
@@ -224,7 +223,7 @@ class ...
 		<li><strong>styles</strong><br /><code>/styles</code>, <code>style.php</code><br />phpBB Styles/Templates/Themes/Imagesets</li>
 	</ul>
 
-	<a name="constants"></a></h3>1.iv. Special Constants</h3>
+	<a name="constants"></a><h3>1.iv. Special Constants</h3>
 
 	<p>There are some special constants application developers are able to utilize to bend some of phpBB's internal functionality to suit their needs.</p>
 
@@ -288,7 +287,7 @@ PHPBB_QA                   (Set board to QA-Mode, which means the updater also c
 
 		<div class="content">
 
-	<p>Please note that these Guidelines applies to all php, html, javascript and css files.</p>
+	<p>Please note that these guidelines apply to all php, html, javascript and css files.</p>
 
 	<a name="namingvars"></a><h3>2.i. Variable/Function Naming</h3>
 
@@ -1170,24 +1169,13 @@ append_sid(&quot;{$phpbb_root_path}memberlist.$phpEx&quot;, 'mode=group&amp;amp;
 <span class="comment">&lt;!-- INCLUDE {FILE_VAR} --&gt;</span>
 </pre></div>
 
-<p>Template defined variables can also be utilised.
+<p>Template defined variables can also be utilised.</p>
 
 <div class="codebox"><pre>
 <span class="comment">&lt;!-- DEFINE $SOME_VAR = 'my_file.html' --&gt;</span>
 <span class="comment">&lt;!-- INCLUDE {$SOME_VAR} --&gt;</span>
 </pre></div>
-<!-- no longer added in 3.0.6
-<p>Also added in <strong>3.0.6</strong> is the ability to increment or decrement a variable on use. This can be used for instances like tabindexes, where the amount of entries is not statically known.
-The INC (for incrementing) and DEC (for decrementing) commands will print the <strong>current</strong> state of a defined var and then increment/decrement it by one (postincrement/postdecrement).</p>
 
-<div class="codebox"><pre>
-<span class="comment">&lt;!-- DEFINE $SOME_VAR = 1 --&gt;</span>
-<span class="comment">&lt;!-- INC $SOME_VAR --&gt;</span>
-Result: 1<br />
-<span class="comment">{$SOME_VAR}</span>
-Result: 2<br />
-</pre></div>
-//-->
 <h4>PHP</h4>
 <p>A contentious decision has seen the ability to include PHP within the template introduced. This is achieved by enclosing the PHP within relevant tags:</p>
 
@@ -1541,11 +1529,11 @@ div
 &lt;form method=&quot;post&quot; id=&quot;mcp&quot; action=&quot;{U_POST_ACTION}&quot;&gt;
 
 	&lt;fieldset class="submit-buttons"&gt;
-		&lt;input type=&quot;reset&quot; value=&quot;{L_RESET}&quot; name=&quot;reset&quot; class=&quot;button2&quot; /&gt&nbsp;
-		&lt;input type=&quot;submit&quot; name=&quot;action[add_warning]&quot; value=&quot;{L_SUBMIT}&quot; class=&quot;button1&quot; /&gt
+		&lt;input type=&quot;reset&quot; value=&quot;{L_RESET}&quot; name=&quot;reset&quot; class=&quot;button2&quot; /&gt;&nbsp;
+		&lt;input type=&quot;submit&quot; name=&quot;action[add_warning]&quot; value=&quot;{L_SUBMIT}&quot; class=&quot;button1&quot; /&gt;
 		{S_FORM_TOKEN}
-	&lt;/fieldset&gt
-&lt;/form&gt
+	&lt;/fieldset&gt;
+&lt;/form&gt;
 		</pre></div><br />
 
 	<a name="inheritance"></a><h3>4.ii. Template Inheritance</h3>
@@ -2337,126 +2325,33 @@ if (utf8_case_fold_nfc($string1) == utf8_case_fold_nfc($string2))
 
 		<div class="content">
 
-	<p>The version control system for phpBB3 is subversion. The repository is available at <a href="http://code.phpbb.com/svn/phpbb" title="repository">http://code.phpbb.com/svn/phpbb</a>.
+	<p>The version control system for phpBB3 is git. The repository is available at <a href="http://github.com/phpbb/phpbb3" title="repository">http://github.com/phpbb/phpbb3</a>.</p>
 
 	<a name="repostruct"></a><h3>7.i. Repository Structure</h3>
 
 	<ul>
-		<li><strong>trunk</strong><br />The latest unstable development version with new features etc. Contains the actual board in <code>/trunk/phpBB</code></li>
-		<li><strong>branches</strong><br />Development branches of stable phpBB releases. Copied from <code>/trunk</code> at the time of release.
+		<li><strong>develop</strong><br />The latest unstable development version with new features etc.</li>
+		<li><strong>develop-*</strong><br />Development branches of stable phpBB releases. Branched off of <code>develop</code> at the time of feature freeze.
 			<ul>
-				<li><strong>phpBB3.0</strong><code>/branches/phpBB-3_0_0/phpBB</code><br />Development branch of the stable 3.0 line. Bug fixes are applied here.</li>
-				<li><strong>phpBB2</strong><code>/branches/phpBB-2_0_0/phpBB</code><br />Old phpBB2 development branch.</li>
+				<li><strong>phpBB3.0</strong><code>develop-olympus</code><br />Development branch of the stable 3.0 line. Bug fixes are applied here.</li>
+				<li><strong>phpBB3.1</strong><code>develop-ascraeus</code><br />Development branch of the stable 3.1 line. Bug fixes are applied here.</li>
 			</ul>
 		</li>
-		<li><strong>tags</strong><br />Released versions. Copies of trunk or the respective branch, made at the time of release.
+		<li><strong>master</strong><br />A branch containing all stable phpBB3 release points</li>
+		<li><strong>tags</strong><br />Released versions. Stable ones get merged into the master branch.
 			<ul>
-				<li><code>/tags/release_3_0_BX</code><br />Beta release X of the 3.0 line.</li>
-				<li><code>/tags/release_3_0_RCX</code><br />Release candidate X of the 3.0 line.</li>
-				<li><code>/tags/release_3_0_X-RCY</code><br />Release candidate Y of the stable 3.0.X release.</li>
-				<li><code>/tags/release_3_0_X</code><br />Stable <strong>3.0.X</strong> release.</li>
-				<li><code>/tags/release_2_0_X</code><br />Old stable 2.0.X release.</li>
+				<li><code>release-3.Y-BX</code><br />Beta release X of the 3.Y line.</li>
+				<li><code>release-3.Y-RCX</code><br />Release candidate X of the 3.Y line.</li>
+				<li><code>release-3.Y.Z-RCX</code><br />Release candidate X of the stable 3.Y.Z release.</li>
+				<li><code>release-3.0.X</code><br />Stable <strong>3.0.X</strong> release.</li>
+				<li><code>release-2.0.X</code><br />Old stable 2.0.X release.</li>
 			</ul>
 		</li>
 	</ul>
 
-	<a name="commitmessage"></a><h3>7.ii. Commit Messages</h3>
+	<a name="commitmessage"></a><h3>7.ii. Commit Messages and Repository Rules</h3>
 
-	<p>The commit message should contain a brief explanation of all changes made within the commit. Often identical to the changelog entry. A bug ticket can be referenced by specifying the ticket ID with a hash, e.g. #12345. A reference to another revision should simply be prefixed with r, e.g. r12345.</p>
-
-	<p>Junior Developers need to have their patches approved by a development team member first. The commit message must end in a line with the following format:</p>
-
-	<div class="codebox"><pre>
-Authorised by: developer1[, developer2[, ...]]
-	</pre></div>
-
-		</div>
-
-		<div class="back2top"><a href="#wrap" class="top">Back to Top</a></div>
-
-		<span class="corners-bottom"><span></span></span></div>
-	</div>
-
-	<hr />
-
-<a name="changes"></a><h2>8. Guidelines Changelog</h2>
-	<div class="paragraph">
-		<div class="inner"><span class="corners-top"><span></span></span>
-
-		<div class="content">
-<h3>Revision 10007</h3>
-
-<ul>
-	<li>Added <a href="#constants">Special Constants</a> section.</li>
-</ul>
-
-<h3>Revision 9817</h3>
-
-<ul>
-	<li>Added VCS section.</li>
-</ul>
-
-<h3>Revision 8732</h3>
-
-<ul>
-	<li>Added cfg files.</li>
-	<li>Added template <a href="#inheritance">inheritance</a>.</li>
-</ul>
-
-<h3>Revision 8596+</h3>
-
-<ul>
-	<li>Removed sql_build_array('MULTI_INSERT'... statements.</li>
-	<li>Added sql_multi_insert() explanation.</li>
-</ul>
-
-<h3>Revision 1.31</h3>
-
-<ul>
-	<li>Added add_form_key and check_form_key. </li>
-</ul>
-
-<h3>Revision 1.24</h3>
-
-<ul>
-	<li>Added <a href="#translation">5. Character Sets and Encodings</a> section to explain the recommended treatment of strings in phpBB.</li>
-</ul>
-
-<h3>Revision 1.16</h3>
-
-<ul>
-	<li>Added <a href="#translation">6. Translation (<abbr title="Internationalisation">i18n</abbr>/<abbr title="Localisation">L10n</abbr>) Guidelines</a> section to explain expected format and authoring considerations for language packs that are to be created for phpBB.</li>
-</ul>
-
-<h3>Revision 1.11-1.15</h3>
-
-<ul>
-	<li>Various document formatting, spelling, punctuation, grammar bugs.</li>
-</ul>
-
-<h3>Revision 1.9-1.10</h3>
-
-<ul>
-	<li>Added sql_query_limit to <a href="#sql">2.iii. SQL/SQL Layout</a>.</li>
-</ul>
-
-<h3>Revision 1.8</h3>
-
-<ul>
-	<li>Some adjustements to wordings</li>
-	<li>Updated paragraph <a href="#locations">1.iii. File Locations</a> to reflect recent changes</li>
-	<li>Extended paragraph <a href="#codelayout">2.ii. Code Layout</a>.</li>
-	<li>Added sql_in_set and sql_build_query explanation to <a href="#sql">2.iii. SQL/SQL Layout</a>.</li>
-	<li>Updated paragraph <a href="#styling">3. Styling</a>.</li>
-	<li>Updated paragraph <a href="#templating">4. Templating</a> to explain loop checking, loop breaking and other changes we recently made.</li>
-</ul>
-
-<h3>Revision 1.5</h3>
-
-<ul>
-	<li>Changed General function usage paragraph in <a href="#general">2.v. General Guidelines</a></li>
-</ul>
-
+	<p>Information on repository rules, such as commit messages can be found at <a href="http://wiki.phpbb.com/display/DEV/Git" title="phpBB Git Information">http://wiki.phpbb.com/display/DEV/Git</a>.</p>
 
 		</div>
 
@@ -2486,7 +2381,7 @@ Authorised by: developer1[, developer2[, ...]]
 <!-- END DOCUMENT -->
 
 	<div id="page-footer">
-		<div class="version"> $Id: coding-guidelines.html 10064 2009-08-30 11:15:24Z acydburn $ </div>
+		<div class="version">&nbsp;</div>
 	</div>
 </div></div>
 

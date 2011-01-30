@@ -88,7 +88,7 @@
             <asp:TableCell ColumnSpan="3">
                 <asp:Panel ID="Panel4" runat="server" CssClass="text">
                     A sample of our recording for a full band, this song showcases one of the best young
-                    bands in Blackpool at the moment - The Silvertones. Once again all recorded in our
+                    bands in Blackpool, Lancashire at the moment - The Silvertones. Once again all recorded in our
                     new Live Room, with production input from Andrew and Dan, this showcases the talents
                     of the Rock Hard team.
                 </asp:Panel>
@@ -116,7 +116,7 @@
             <asp:TableCell ColumnSpan="3">
                 <asp:Panel ID="Panel8" runat="server" CssClass="text">
                     This recording appears with great thanks to Steph Fraser. Steph is without a doubt
-                    one of the most exciting talents in Blackpool at the moment. She ticks all the boxes
+                    one of the most exciting talents in Blackpool, Lancashire at the moment. She ticks all the boxes
                     for a Singer/Song-writer and I would expect her to explode into the national consciousness
                     at some point in the near future. Steph has been working with RHMG for many years,
                     from her first appearance at a Rock Hard Live event at the tender age of 14. This

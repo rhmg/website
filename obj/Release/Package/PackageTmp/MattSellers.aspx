@@ -30,7 +30,7 @@
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Image ID="Image3" runat="server" ImageUrl="~/images/us/matt sat at the drums at rock hard studios_.jpg"
-                    AlternateText="Matt sat at the drum kit in Rock Hard Studios, Blackpool" ToolTip="Matt sat at the drum kit in Rock Hard Studios, Blackpool" />
+                    AlternateText="Matt sat at the drum kit in Rock Hard Studios, Blackpool, Lancashire" ToolTip="Matt sat at the drum kit in Rock Hard Studios, Blackpool, Lancashire" />
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Image ID="Image4" runat="server" ImageUrl="~/images/us/matt drumming from behind_.jpg"

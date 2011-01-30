@@ -16,7 +16,7 @@ namespace rhmgWebsite.Web
                 new PageDescription("Building the Studio - Photo record of the Rehearsal Studios and Recording Studio being built."),
                 new NavControlPath("CustomControls/StudiosSideBar.ascx"),
                 new Banner("~/images/Rock Hard Studios - Blackpool's best recording and rehearsal studios.png",
-                    "Rock Hard Studios - Blackpool's best recording and rehearsal studios"),
+                    "Rock Hard Studios - Blackpool, Lancashire's best recording and rehearsal studios"),
                     false);
         }
     }

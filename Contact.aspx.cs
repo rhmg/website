@@ -18,7 +18,7 @@ namespace rhmgWebsite.Web
                 new PageDescription("How to contact us including a link to a page with a map and directions, and a booking form."),
                 new NavControlPath("CustomControls/HomeSideBar.ascx"),
                 new Banner("~/images/Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios.png",
-                    "Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios"),
+                    "Rock Hard Music Group - Running Blackpool, Lancashire's best recording and rehearsal studios"),
                     false);
         }
         protected void Submit_click(object sender, EventArgs e)

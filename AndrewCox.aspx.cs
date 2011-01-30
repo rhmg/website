@@ -16,7 +16,7 @@ namespace rhmgWebsite.Web
                 new PageDescription("Meet Andrew Cox, one of our producers.  Andrew is experienced in recording bands from all styles and is an exceptional producer."),
                 new NavControlPath("CustomControls/HomeSideBar.ascx"),
                 new Banner("~/images/Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios.png",
-                    "Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios"),
+                    "Rock Hard Music Group - Running Blackpool, Lancashire's best recording and rehearsal studios"),
                     false);
         }
     }

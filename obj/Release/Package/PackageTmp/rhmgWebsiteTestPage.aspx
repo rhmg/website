@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Rock Hard Music Group - Recording and Rehearsals, Drum Tuition and Music Academy</title>
-    <meta name="description" content="Website with information about recording and rehearsing with Rock Hard Studios, Blackpool. Also Rock Hard Academy, with drum lessons." />
+    <meta name="description" content="Website with information about recording and rehearsing with Rock Hard Studios, Blackpool, Lancashire. Also Rock Hard Academy, with drum lessons." />
     <style type="text/css">
         html, body
         {

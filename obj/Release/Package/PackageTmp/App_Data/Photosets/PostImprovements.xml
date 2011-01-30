@@ -3,7 +3,7 @@
   xmlns="http://www.rhmg.co.uk"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.rhmg.co.uk PhotoSets.xsd"
-  length="9"
+  length="13"
   photopath="~/images/photos/post_improvements/"
   pageTitle="Studio After Improvements">
   <Picture index="1"

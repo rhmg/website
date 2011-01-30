@@ -16,7 +16,7 @@ namespace rhmgWebsite.Web
                 new PageDescription("Rock Hard Academy - find out about drum lessons in Blackpool, Lancashire"),
                 new NavControlPath(string.Empty),
                 new Banner("~/images/Rock Hard Academy - Blackpool's Academy of Musical Excellence, for drum tuition and more.png",
-                    "Rock Hard Academy - Blackpool's Academy of Musical Excellence, for drum tuition and more"),
+                    "Rock Hard Academy - Blackpool, Lancashire's Academy of Musical Excellence, for drum tuition and more"),
                     false);
         }
     }

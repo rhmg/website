@@ -27,6 +27,9 @@ namespace rhmgWebsite.Web.CustomControls
                 case Pages.buildingTheStudio:
                     BuildingOfHL.CssClass = "sidepanelLinkInactive";
                     break;
+                case Pages.improvingTheStudio:
+                    ImprovingItHL.CssClass = "sidepanelLinkInactive";
+                    break;
                 case Pages.studioSessions:
                     StudioSessionsHL.CssClass = "sidepanelLinkInactive";
                     break;

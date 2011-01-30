@@ -7,7 +7,7 @@
     <asp:Label ID="Label1" runat="server" CssClass="title" Text="Welcome to the Rock Hard Music Group" />
     <asp:Panel runat="server" CssClass="text">
         We are pleased to welcome you to our online presence. Here you can find information
-        about all aspects of our business including our central Blackpool based recording
+        about all aspects of our business including our central Blackpool, Lancashire based recording
         and rehearsal studio; the best in the North West of England. In addition to our
         recording and rehearsal studio, we run an Academy of Excellence in Music, and also
         have various custom Live Music Services.</asp:Panel>
@@ -22,7 +22,7 @@
     <asp:Panel ID="Panel2" runat="server" CssClass="text">
         We would love to hear from you so if you have any questions or specific requirements
         regarding anything at all please do get in contact and we will be happy to help
-        you. Our studio, in central Blackpool, is open daily from 10am - 11pm if you want
+        you. Our studio, in central Blackpool, Lancashire, is open daily from 10am - 11pm if you want
         to visit; we would be happy to get the kettle on and welcome you.
     </asp:Panel>
     <asp:Table runat="server" CellPadding="0" CellSpacing="0" Width="100%">

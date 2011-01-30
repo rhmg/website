@@ -58,7 +58,7 @@
         <asp:TableRow>
             <asp:TableCell Width="200px" HorizontalAlign="Center">
                 <asp:Image ID="Image3" runat="server" ImageUrl="~/images/us/matt drum tutor teaching drums in blackpool.jpg"
-                    AlternateText="Matt Sellers - Drum Tutor teaching drums in Blackpool" ToolTip="Matt Sellers - Drum Tutor teaching drums in Blackpool" />
+                    AlternateText="Matt Sellers - Drum Tutor teaching drums in Blackpool, Lancashire" ToolTip="Matt Sellers - Drum Tutor teaching drums in Blackpool, Lancashire" />
             </asp:TableCell>
             <asp:TableCell VerticalAlign="Middle">
                 <asp:Panel ID="Panel1" runat="server" CssClass="text" HorizontalAlign="Justify">

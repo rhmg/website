@@ -26,7 +26,7 @@
             </asp:TableCell>
             <asp:TableCell Width="200px" RowSpan="11" VerticalAlign="Middle">
                 <asp:Image runat="server" ImageUrl="~/images/banners/Looking through from Control Room Into Live Room with singer Recording at Blackpool Recording Studio.jpg"
-                    AlternateText="Looking through from Control Room Into Live Room with singer Recording at Blackpool Recording Studio" ToolTip="Looking through from Control Room Into Live Room with singer Recording at Blackpool Recording Studio" />
+                    AlternateText="Looking through from Control Room Into Live Room with singer Recording at Blackpool, Lancashire Recording Studio" ToolTip="Looking through from Control Room Into Live Room with singer Recording at Blackpool, Lancashire Recording Studio" />
             </asp:TableCell>
         </asp:TableRow>
         <asp:TableRow>

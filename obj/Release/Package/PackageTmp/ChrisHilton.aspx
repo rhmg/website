@@ -45,7 +45,7 @@
                 <asp:Panel ID="Panel6" runat="server" CssClass="text">
                     I have been teaching for many years, starting when I was 19 with Blackpool Football
                     Club helping children aged 7-11 with developing their footballing skills. This initial
-                    experience helped me move into teaching sport within schools around Blackpool as
+                    experience helped me move into teaching sport within schools around Blackpool, Lancashire as
                     a school coordinator for Blackpool Council. I have a vision for bringing this enthusiasm
                     for education to the music arena, and I coordinate the Education program for RHMG.<br />
                     <br />

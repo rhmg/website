@@ -24,7 +24,7 @@
                         <asp:TableCell Width="400px">
                             <asp:Panel ID="Panel3" runat="server" CssClass="text">
                                 Rock Hard Studios are proud to offer the Cabaret Artist Package.... For an incredible
-                                all inclusive price you can rehearse and record in Blackpool’s biggest and best
+                                all inclusive price you can rehearse and record in Blackpool, Lancashire’s biggest and best
                                 professional studio.
                             </asp:Panel>
                             <asp:Panel ID="Panel4" runat="server" CssClass="text">

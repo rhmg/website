@@ -133,7 +133,7 @@
             <asp:TableCell VerticalAlign="Middle" HorizontalAlign="Left">
                 <asp:HyperLink ID="HyperLink2" runat="server" CssClass="bandSessionLink" Text="Studio booking form&nbsp;&nbsp;"
                     NavigateUrl="~/Studios_bookings.aspx" />
-                <asp:HyperLink ID="HyperLink5" runat="server" ToolTip="Studio booking form" NavigateUrl="~/HowToFindUs.aspx"
+                <asp:HyperLink ID="HyperLink5" runat="server" ToolTip="Studio booking form" NavigateUrl="~/Studios_bookings.aspx"
                     ImageUrl="~/images/follow link.png" />
                 <asp:Panel ID="Panel3" runat="server" CssClass="textNoMargin" HorizontalAlign="Justify">
                     If you are definitely interested in booking studio time, or just have a more detailed

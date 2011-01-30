@@ -17,7 +17,7 @@ namespace rhmgWebsite.Web
                 new PageDescription("Send us a request for a booking in either recording or rehearsal studio"),
                 new NavControlPath("CustomControls/StudiosSideBar.ascx"),
                 new Banner("~/images/Rock Hard Studios - Blackpool's best recording and rehearsal studios.png",
-                    "Rock Hard Studios - Blackpool's best recording and rehearsal studios"),
+                    "Rock Hard Studios - Blackpool, Lancashire's best recording and rehearsal studios"),
                     false);
 
             submit.Enabled = TsCs.Checked;

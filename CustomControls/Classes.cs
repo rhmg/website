@@ -10,7 +10,7 @@ namespace rhmgWebsite.Web
         home, studioHome, academy, gallery, downloads, contact, howToFindUs, rehearsals,
         recording, bookings, theTeam, andrew, dan, siteMap, links, products, popStarParties,
         cabaretArtists, termsAndConditions, buildingTheStudio, exploreTheStudio, studioSessions,
-        photoshootWithNaz, freeRecordingAndRehearsalsDeal
+        photoshootWithNaz, freeRecordingAndRehearsalsDeal, improvingTheStudio
     }
     public class PageTitle
     {

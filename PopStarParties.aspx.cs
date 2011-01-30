@@ -16,9 +16,9 @@ namespace rhmgWebsite.Web
                 new PageDescription("Pop Star Parties - be a pop star for a couple of hours. Sing along and take the CD with you. Ideal for birthday parties or other celebrations. For girls aged 8+"),
                 new NavControlPath("CustomControls/HomeSideBar.ascx"),
                 new Banner("~/images/Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios.png",
-                    "Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios"),
+                    "Rock Hard Music Group - Running Blackpool, Lancashire's best recording and rehearsal studios"),
                     false,
-                new PageKeyWords("Party Parties Blackpool Fylde Music Fun Girls Friends Karaoke Happy Pop-Star Pop Star Celebration"));
+                new PageKeyWords("Party Parties Blackpool Lancashire Fylde Music Fun Girls Friends Karaoke Happy Pop-Star Pop Star Celebration"));
         }
     }
 }

@@ -13,7 +13,10 @@
     NavigateUrl="~/ExploreTheStudio.aspx" /><br />
 <br />
 <asp:HyperLink ID="BuildingOfHL" runat="server" Text="Building It" CssClass="sidepanelLink"
-    NavigateUrl="~/BuildingTheStudio.aspx" />
+    NavigateUrl="~/BuildingTheStudio.aspx" /><br />
+<br />
+<asp:HyperLink ID="ImprovingItHL" runat="server" Text="Improving It" CssClass="sidepanelLink"
+    NavigateUrl="~/PostImprovements.aspx" />
 <br />
 <br />
 <asp:HyperLink ID="StudioSessionsHL" runat="server" Text="Sessions" CssClass="sidepanelLink"

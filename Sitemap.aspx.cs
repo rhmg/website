@@ -16,7 +16,7 @@ namespace rhmgWebsite.Web
                 new PageDescription("The site map for our website, helping you find out about Recording and Rehearsals in Blackpool, Lancashire"),
                 new NavControlPath("CustomControls/HomeSideBar.ascx"),
                 new Banner("~/images/Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios.png",
-                    "Rock Hard Music Group - Running Blackpool's best recording and rehearsal studios"),
+                    "Rock Hard Music Group - Running Blackpool, Lancashire's best recording and rehearsal studios"),
                     false);
         }
     }

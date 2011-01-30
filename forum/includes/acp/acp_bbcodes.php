@@ -124,6 +124,9 @@ class acp_bbcodes
 			case 'modify':
 			case 'create':
 
+				$warn_text = preg_match('%<[^>]*\{text[\d]*\}[^>]*>%i', $bbcode_tpl);
+				if (!$warn_text || confirm_box(true))
+				{
 				$data = $this->build_regexp($bbcode_match, $bbcode_tpl);
 
 				// Make sure the user didn't pick a "bad" name for the BBCode tag.
@@ -238,6 +241,19 @@ class acp_bbcodes
 				add_log('admin', $log_action, $data['bbcode_tag']);
 
 				trigger_error($user->lang[$lang] . adm_back_link($this->u_action));
+				}
+				else
+				{
+					confirm_box(false, $user->lang['BBCODE_DANGER'], build_hidden_fields(array(
+						'action'				=> $action,
+						'bbcode'				=> $bbcode_id,
+						'bbcode_match'			=> $bbcode_match,
+						'bbcode_tpl'			=> htmlspecialchars($bbcode_tpl),
+						'bbcode_helpline'		=> $bbcode_helpline,
+						'display_on_posting'	=> $display_on_posting,
+						))
+					, 'confirm_bbcode.html');
+				}
 
 			break;
 
@@ -299,6 +315,18 @@ class acp_bbcodes
 	{
 		$bbcode_match = trim($bbcode_match);
 		$bbcode_tpl = trim($bbcode_tpl);
+		$utf8 = strpos($bbcode_match, 'INTTEXT') !== false;
+
+		// make sure we have utf8 support
+		$utf8_pcre_properties = false;
+		if (version_compare(PHP_VERSION, '5.1.0', '>=') || (version_compare(PHP_VERSION, '5.0.0-dev', '<=') && version_compare(PHP_VERSION, '4.4.0', '>=')))
+		{
+			// While this is the proper range of PHP versions, PHP may not be linked with the bundled PCRE lib and instead with an older version
+			if (@preg_match('/\p{L}/u', 'a') !== false)
+			{
+				$utf8_pcre_properties = true;
+			}
+		}
 
 		$fp_match = preg_quote($bbcode_match, '!');
 		$fp_replace = preg_replace('#^\[(.*?)\]#', '[$1:$uid]', $bbcode_match);
@@ -326,6 +354,9 @@ class acp_bbcodes
 			'SIMPLETEXT' => array(
 				'!([a-zA-Z0-9-+.,_ ]+)!'	 =>	"$1"
 			),
+			'INTTEXT' => array(
+				($utf8_pcre_properties) ? '!([\p{L}\p{N}\-+,_. ]+)!u' : '!([a-zA-Z0-9\-+,_. ]+)!u'	 =>	"$1"
+			),
 			'IDENTIFIER' => array(
 				'!([a-zA-Z0-9-_]+)!'	 =>	"$1"
 			),
@@ -343,6 +374,7 @@ class acp_bbcodes
 			'EMAIL' => '(' . get_preg_expression('email') . ')',
 			'TEXT' => '(.*?)',
 			'SIMPLETEXT' => '([a-zA-Z0-9-+.,_ ]+)',
+			'INTTEXT' => ($utf8_pcre_properties) ? '([\p{L}\p{N}\-+,_. ]+)' : '([a-zA-Z0-9\-+,_. ]+)',
 			'IDENTIFIER' => '([a-zA-Z0-9-_]+)',
 			'COLOR' => '([a-zA-Z]+|#[0-9abcdefABCDEF]+)',
 			'NUMBER' => '([0-9]+)',
@@ -350,6 +382,7 @@ class acp_bbcodes
 
 		$pad = 0;
 		$modifiers = 'i';
+		$modifiers .= ($utf8 && $utf8_pcre_properties) ? 'u' : '';
 
 		if (preg_match_all('/\{(' . implode('|', array_keys($tokens)) . ')[0-9]*\}/i', $bbcode_match, $m))
 		{
@@ -398,7 +431,7 @@ class acp_bbcodes
 			}
 
 			$fp_match = '!' . $fp_match . '!' . $modifiers;
-			$sp_match = '!' . $sp_match . '!s';
+			$sp_match = '!' . $sp_match . '!s' . (($utf8) ? 'u' : '');
 
 			if (strpos($fp_match, 'e') !== false)
 			{

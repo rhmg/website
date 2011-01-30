@@ -286,11 +286,7 @@ class ucp_register
 					$config['require_activation'] == USER_ACTIVATION_SELF ||
 					$config['require_activation'] == USER_ACTIVATION_ADMIN) && $config['email_enable'])
 				{
-					$user_actkey = gen_rand_string(10);
-					$key_len = 54 - (strlen($server_url));
-					$key_len = ($key_len < 6) ? 6 : $key_len;
-					$user_actkey = substr($user_actkey, 0, $key_len);
-
+					$user_actkey = gen_rand_string(mt_rand(6, 10));
 					$user_type = USER_INACTIVE;
 					$user_inactive_reason = INACTIVE_REGISTER;
 					$user_inactive_time = time();
@@ -331,6 +327,12 @@ class ucp_register
 				if ($user_id === false)
 				{
 					trigger_error('NO_USER', E_USER_ERROR);
+				}
+
+				// Okay, captcha, your job is done.
+				if ($config['enable_confirm'] && isset($captcha))
+				{
+					$captcha->reset();
 				}
 
 				if ($coppa && $config['email_enable'])

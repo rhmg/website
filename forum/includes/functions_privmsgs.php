@@ -894,6 +894,13 @@ function handle_mark_actions($user_id, $mark_action)
 
 		case 'delete_marked':
 
+			global $auth;
+
+			if (!$auth->acl_get('u_pm_delete'))
+			{
+				trigger_error('NO_AUTH_DELETE_MESSAGE');
+			}
+
 			if (confirm_box(true))
 			{
 				delete_pm($user_id, $msg_ids, $cur_folder_id);
@@ -1373,6 +1380,9 @@ function submit_pm($mode, $subject, &$data, $put_in_outbox = true)
 		}
 	}
 
+	// First of all make sure the subject are having the correct length.
+	$subject = truncate_string($subject);
+
 	$db->sql_transaction('begin');
 
 	$sql = '';
@@ -1744,6 +1754,8 @@ function message_history($msg_id, $user_id, $message_row, $folder, $in_post_mode
 		return false;
 	}
 
+	$title = $row['message_subject'];
+
 	$rowset = array();
 	$bbcode_bitfield = '';
 	$folder_url = append_sid("{$phpbb_root_path}ucp.$phpEx", 'i=pm') . '&amp;folder=';
@@ -1766,8 +1778,6 @@ function message_history($msg_id, $user_id, $message_row, $folder, $in_post_mode
 	}
 	while ($row = $db->sql_fetchrow($result));
 	$db->sql_freeresult($result);
-
-	$title = $row['message_subject'];
 
 	if (sizeof($rowset) == 1 && !$in_post_mode)
 	{

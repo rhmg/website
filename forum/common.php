@@ -19,8 +19,12 @@ if (!defined('IN_PHPBB'))
 $starttime = explode(' ', microtime());
 $starttime = $starttime[1] + $starttime[0];
 
-// Report all errors, except notices
-error_reporting(E_ALL ^ E_NOTICE);
+// Report all errors, except notices and deprecation messages
+if (!defined('E_DEPRECATED'))
+{
+	define('E_DEPRECATED', 8192);
+}
+error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
 
 /*
 * Remove variables created by register_globals from the global scope
@@ -119,12 +123,10 @@ if (defined('IN_CRON'))
 	$phpbb_root_path = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 }
 
-if (!file_exists($phpbb_root_path . 'config.' . $phpEx))
+if (file_exists($phpbb_root_path . 'config.' . $phpEx))
 {
-	die("<p>The config.$phpEx file could not be found.</p><p><a href=\"{$phpbb_root_path}install/index.$phpEx\">Click here to install phpBB</a></p>");
+	require($phpbb_root_path . 'config.' . $phpEx);
 }
-
-require($phpbb_root_path . 'config.' . $phpEx);
 
 if (!defined('PHPBB_INSTALLED'))
 {
@@ -172,7 +174,8 @@ if (defined('DEBUG_EXTRA'))
 }
 
 // Load Extensions
-if (!empty($load_extensions))
+// dl() is deprecated and disabled by default as of PHP 5.3.
+if (!empty($load_extensions) && function_exists('dl'))
 {
 	$load_extensions = explode(',', $load_extensions);
 

@@ -62,16 +62,22 @@ function login_db(&$username, &$password)
 			'user_row'	=> array('user_id' => ANONYMOUS),
 		);
 	}
+	$show_captcha = $config['max_login_attempts'] && $row['user_login_attempts'] >= $config['max_login_attempts'];
 
 	// If there are too much login attempts, we need to check for an confirm image
 	// Every auth module is able to define what to do by itself...
-	if ($config['max_login_attempts'] && $row['user_login_attempts'] >= $config['max_login_attempts'])
+	if ($show_captcha)
 	{
 		// Visual Confirmation handling
+		if (!class_exists('phpbb_captcha_factory'))
+		{
+			global $phpbb_root_path, $phpEx;
+			include ($phpbb_root_path . 'includes/captcha/captcha_factory.' . $phpEx);
+		}
 
 		$captcha =& phpbb_captcha_factory::get_instance($config['captcha_plugin']);
 		$captcha->init(CONFIRM_LOGIN);
-		$vc_response = $captcha->validate();
+		$vc_response = $captcha->validate($row);
 		if ($vc_response)
 		{
 			return array(
@@ -79,6 +85,10 @@ function login_db(&$username, &$password)
 				'error_msg'		=> 'LOGIN_ERROR_ATTEMPTS',
 				'user_row'		=> $row,
 			);
+		}
+		else
+		{
+			$captcha->reset();
 		}
 		
 	}
@@ -124,7 +134,8 @@ function login_db(&$username, &$password)
 				// increase login attempt count to make sure this cannot be exploited
 				$sql = 'UPDATE ' . USERS_TABLE . '
 					SET user_login_attempts = user_login_attempts + 1
-					WHERE user_id = ' . $row['user_id'];
+					WHERE user_id = ' . (int) $row['user_id'] . '
+						AND user_login_attempts < ' . LOGIN_ATTEMPTS_MAX;
 				$db->sql_query($sql);
 
 				return array(
@@ -184,13 +195,14 @@ function login_db(&$username, &$password)
 	// Password incorrect - increase login attempts
 	$sql = 'UPDATE ' . USERS_TABLE . '
 		SET user_login_attempts = user_login_attempts + 1
-		WHERE user_id = ' . $row['user_id'];
+		WHERE user_id = ' . (int) $row['user_id'] . '
+			AND user_login_attempts < ' . LOGIN_ATTEMPTS_MAX;
 	$db->sql_query($sql);
 
 	// Give status about wrong password...
 	return array(
-		'status'		=> LOGIN_ERROR_PASSWORD,
-		'error_msg'		=> 'LOGIN_ERROR_PASSWORD',
+		'status'		=> ($show_captcha) ? LOGIN_ERROR_ATTEMPTS : LOGIN_ERROR_PASSWORD,
+		'error_msg'		=> ($show_captcha) ? 'LOGIN_ERROR_ATTEMPTS' : 'LOGIN_ERROR_PASSWORD',
 		'user_row'		=> $row,
 	);
 }

@@ -106,7 +106,14 @@ function mcp_topic_view($id, $mode, $action)
 
 	if ($total == -1)
 	{
+		if ($auth->acl_get('m_approve', $topic_info['forum_id']))
+		{
+			$total = $topic_info['topic_replies_real'] + 1;
+		}
+		else
+	{
 		$total = $topic_info['topic_replies'] + 1;
+		}
 	}
 
 	$posts_per_page = max(0, request_var('posts_per_page', intval($config['posts_per_page'])));
@@ -230,7 +237,7 @@ function mcp_topic_view($id, $mode, $action)
 			'POST_ID'		=> $row['post_id'],
 			'RETURN_TOPIC'	=> sprintf($user->lang['RETURN_TOPIC'], '<a href="' . append_sid("{$phpbb_root_path}viewtopic.$phpEx", 't=' . $topic_id) . '">', '</a>'),
 
-			'MINI_POST_IMG'			=> ($post_unread) ? $user->img('icon_post_target_unread', 'NEW_POST') : $user->img('icon_post_target', 'POST'),
+			'MINI_POST_IMG'			=> ($post_unread) ? $user->img('icon_post_target_unread', 'UNREAD_POST') : $user->img('icon_post_target', 'POST'),
 
 			'S_POST_REPORTED'	=> ($row['post_reported']) ? true : false,
 			'S_POST_UNAPPROVED'	=> ($row['post_approved']) ? false : true,

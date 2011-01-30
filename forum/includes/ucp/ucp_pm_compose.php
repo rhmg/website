@@ -767,7 +767,7 @@ function compose_pm($id, $mode, $action)
 			$parse_sig->bbcode_uid = $preview_signature_uid;
 			$parse_sig->bbcode_bitfield = $preview_signature_bitfield;
 
-			$parse_sig->format_display($enable_bbcode, $enable_urls, $enable_smilies);
+			$parse_sig->format_display($config['allow_sig_bbcode'], $config['allow_sig_links'], $config['allow_sig_smilies']);
 			$preview_signature = $parse_sig->message;
 			unset($parse_sig);
 		}
@@ -1054,7 +1054,7 @@ function compose_pm($id, $mode, $action)
 		'S_COMPOSE_PM'			=> true,
 		'S_EDIT_POST'			=> ($action == 'edit'),
 		'S_SHOW_PM_ICONS'		=> $s_pm_icons,
-		'S_BBCODE_ALLOWED'		=> $bbcode_status,
+		'S_BBCODE_ALLOWED'		=> ($bbcode_status) ? 1 : 0,
 		'S_BBCODE_CHECKED'		=> ($bbcode_checked) ? ' checked="checked"' : '',
 		'S_SMILIES_ALLOWED'		=> $smilies_status,
 		'S_SMILIES_CHECKED'		=> ($smilies_checked) ? ' checked="checked"' : '',

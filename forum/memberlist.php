@@ -430,21 +430,71 @@ switch ($mode)
 
 		$user_id = (int) $member['user_id'];
 
+		// Get group memberships
+		// Also get visiting user's groups to determine hidden group memberships if necessary.
+		$auth_hidden_groups = ($user_id === (int) $user->data['user_id'] || $auth->acl_gets('a_group', 'a_groupadd', 'a_groupdel')) ? true : false;
+		$sql_uid_ary = ($auth_hidden_groups) ? array($user_id) : array($user_id, (int) $user->data['user_id']);
+
 		// Do the SQL thang
-		$sql = 'SELECT g.group_id, g.group_name, g.group_type
-			FROM ' . GROUPS_TABLE . ' g, ' . USER_GROUP_TABLE . " ug
-			WHERE ug.user_id = $user_id
-				AND g.group_id = ug.group_id" . ((!$auth->acl_gets('a_group', 'a_groupadd', 'a_groupdel')) ? ' AND g.group_type <> ' . GROUP_HIDDEN : '') . '
-				AND ug.user_pending = 0
-			ORDER BY g.group_type, g.group_name';
+		$sql = 'SELECT g.group_id, g.group_name, g.group_type, ug.user_id
+			FROM ' . GROUPS_TABLE . ' g, ' . USER_GROUP_TABLE . ' ug
+			WHERE ' . $db->sql_in_set('ug.user_id', $sql_uid_ary) . '
+				AND g.group_id = ug.group_id
+				AND ug.user_pending = 0';
 		$result = $db->sql_query($sql);
 
-		$group_options = '';
+		// Divide data into profile data and current user data
+		$profile_groups = $user_groups = array();
 		while ($row = $db->sql_fetchrow($result))
 		{
-			$group_options .= '<option value="' . $row['group_id'] . '"' . (($row['group_id'] == $member['group_id']) ? ' selected="selected"' : '') . '>' . (($row['group_type'] == GROUP_SPECIAL) ? $user->lang['G_' . $row['group_name']] : $row['group_name']) . '</option>';
+			$row['user_id'] = (int) $row['user_id'];
+			$row['group_id'] = (int) $row['group_id'];
+
+			if ($row['user_id'] == $user_id)
+			{
+				$profile_groups[] = $row;
+			}
+			else
+			{
+				$user_groups[$row['group_id']] = $row['group_id'];
+			}
 		}
 		$db->sql_freeresult($result);
+
+		// Filter out hidden groups and sort groups by name
+		$group_data = $group_sort = array();
+		foreach ($profile_groups as $row)
+		{
+			if ($row['group_type'] == GROUP_SPECIAL)
+			{
+				// Lookup group name in language dictionary
+				if (isset($user->lang['G_' . $row['group_name']]))
+				{
+					$row['group_name'] = $user->lang['G_' . $row['group_name']];
+				}
+			}
+			else if (!$auth_hidden_groups && $row['group_type'] == GROUP_HIDDEN && !isset($user_groups[$row['group_id']]))
+			{
+				// Skip over hidden groups the user cannot see
+				continue;
+			}
+
+			$group_sort[$row['group_id']] = utf8_clean_string($row['group_name']);
+			$group_data[$row['group_id']] = $row;
+		}
+		unset($profile_groups);
+		unset($user_groups);
+		asort($group_sort);
+
+		$group_options = '';
+		foreach ($group_sort as $group_id => $null)
+		{
+			$row = $group_data[$group_id];
+
+			$group_options .= '<option value="' . $row['group_id'] . '"' . (($row['group_id'] == $member['group_id']) ? ' selected="selected"' : '') . '>' . $row['group_name'] . '</option>';
+		}
+		unset($group_data);
+		unset($group_sort);
 
 		// What colour is the zebra
 		$sql = 'SELECT friend, foe
@@ -1557,7 +1607,7 @@ function show_profile($data, $user_notes_enabled = false, $warn_user_enabled = f
 	$rank_title = $rank_img = $rank_img_src = '';
 	get_user_rank($data['user_rank'], (($user_id == ANONYMOUS) ? false : $data['user_posts']), $rank_title, $rank_img, $rank_img_src);
 
-	if (!empty($data['user_allow_viewemail']) || $auth->acl_get('a_user'))
+	if ((!empty($data['user_allow_viewemail']) && $auth->acl_get('u_sendemail')) || $auth->acl_get('a_user'))
 	{
 		$email = ($config['board_email_form'] && $config['email_enable']) ? append_sid("{$phpbb_root_path}memberlist.$phpEx", 'mode=email&amp;u=' . $user_id) : (($config['board_hide_emails'] && !$auth->acl_get('a_user')) ? '' : 'mailto:' . $data['user_email']);
 	}

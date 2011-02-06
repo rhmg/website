@@ -8,15 +8,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:PostImprovements.aspx.cs" caret="988" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:PopStarParties.aspx.cs" caret="1260" fromTop="10" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:PhotoshootWithNaz.aspx.cs" caret="1071" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:MattSellers.aspx.cs" caret="872" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Links.aspx.cs" caret="940" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:KaraokeSingers.aspx.cs" caret="910" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:HowToFindUs.aspx.cs" caret="1030" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Gallery.aspx.cs" caret="1022" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:FreeRecordingAndRehearsalsDeal.aspx.cs" caret="1138" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:ExploreTheStudio.aspx.cs" caret="1068" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:DanAtkinson.aspx.cs" caret="1006" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:BrandingNavBar.ascx" caret="3043" fromTop="7" />
@@ -29,40 +20,26 @@
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:App_Data/d:Content/f:Quotes.xml" caret="807" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:App_Data/d:Photosets/f:ExploreTheStudio.xml" caret="4161" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:App_Data/d:Photosets/f:PostImprovements.xml" caret="5979" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:ContactUsPanel.ascx" caret="1576" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master.cs" caret="1486" fromTop="7" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:FreeRecordingAndRehearsalsDeal.aspx" caret="1972" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:MattSellers.aspx" caret="2054" fromTop="7" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios.aspx" caret="3433" fromTop="7" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios_rehearsals.aspx" caret="4857" fromTop="12" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios_theteam.aspx" caret="5281" fromTop="19" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:ChrisHilton.aspx" caret="0" fromTop="0" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Contact.aspx" caret="10790" fromTop="9" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Contact.aspx" caret="0" fromTop="0" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:ContactUsPanel.ascx" caret="1587" fromTop="26" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:Classes.cs" caret="1156" fromTop="15" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:PhotoSet.master.cs" caret="3019" fromTop="15" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master.cs" caret="282" fromTop="10" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jqModal.js" caret="4362" fromTop="80" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jquery.js" caret="100520" fromTop="16" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:HowToFindUs.aspx" caret="0" fromTop="0" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jquery.cookie.js" caret="2199" fromTop="30" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:site.js" caret="0" fromTop="0" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Style.css" caret="3301" fromTop="19" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9293" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Thankyou.aspx.cs" caret="860" fromTop="8" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:StudioSessions.aspx.cs" caret="1274" fromTop="12" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:RecordingTheSilvertones.aspx.cs" caret="838" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Index.aspx.cs" caret="755" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Downloads.aspx.cs" caret="749" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:rhmgWebsiteTestPage.aspx" caret="484" fromTop="6" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Index.aspx" caret="673" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Index.aspx" caret="1825" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Downloads.aspx" caret="4567" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Downloads.aspx" caret="6047" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:CabaretArtists.aspx" caret="2024" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:StudioSessions.aspx.cs" caret="496" fromTop="3" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios_rehearsals.aspx.cs" caret="662" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios_recording.aspx.cs" caret="712" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios.aspx.cs" caret="510" fromTop="3" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:PopStarParties.aspx.cs" caret="1271" fromTop="10" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:HowToFindUs.aspx.cs" caret="766" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Gallery.aspx.cs" caret="518" fromTop="3" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:FreeRecordingAndRehearsalsDeal.aspx.cs" caret="857" fromTop="5" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:BrandingNavBar.ascx" caret="628" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:BrandingNavBar.ascx" caret="1036" fromTop="12" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:BrandingNavBar.ascx" caret="1442" fromTop="7" />
-      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:ChrisHilton.aspx" caret="2993" fromTop="9" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:FreeRecordingAndRehearsalsDeal.aspx" caret="1972" fromTop="8" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:MattSellers.aspx" caret="5942" fromTop="7" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:MattSellers.aspx" caret="2054" fromTop="7" />
@@ -70,6 +47,29 @@
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Studios_theteam.aspx" caret="5261" fromTop="7" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Contact.aspx" caret="16822" fromTop="9" />
       <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Contact.aspx" caret="10790" fromTop="9" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:CustomControls/f:ContactUsPanel.ascx" caret="1587" fromTop="26" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master.cs" caret="279" fromTop="10" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:site.js" caret="0" fromTop="0" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jqModal.js" caret="4362" fromTop="15" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Style.css" caret="2917" fromTop="6" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Style.css" caret="4149" fromTop="30" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jquery.cookie.js" caret="2239" fromTop="30" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jquery.cookie.js" caret="217" fromTop="7" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jquery.js" caret="0" fromTop="0" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/d:js/f:jquery.js" caret="100520" fromTop="16" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="21" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="15" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="25" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="27" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="17" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="26" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="11" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="14" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="6" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9517" fromTop="13" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Style.css" caret="3301" fromTop="19" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="3721" fromTop="19" />
+      <File id="561FFD3E-E0CE-4D7B-A668-6D8BA8258FFF/f:Default.Master" caret="9293" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -87,6 +87,13 @@
     <ItemStatistics item="Default">
       <Item value="ThumbnailNavigator5" priority="1" />
       <Item value="ImprovingItHL" priority="0" />
+      <Item value="js" priority="0" />
+      <Item value="jquery.js" priority="0" />
+      <Item value="jquery.cookie.js" priority="0" />
+      <Item value="jqModal.js" priority="0" />
+      <Item value="images" priority="0" />
+      <Item value="special_offers" priority="0" />
+      <Item value="recording_in_blackpool_lancashire_only_160_per_day.jpg" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:rhmgWebsite.Web.CustomControls.ThumbnailNavigator">
       <Item value="Populate`0" priority="0" />

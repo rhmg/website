@@ -14,30 +14,31 @@
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <link href="Style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-
     <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAJ4AlzJ4spkIA__0CUs3TBhReMKJ691Y03TvGENGt0wtZtY6lqxQsc0hBK7eM9dtNLJRPsvcK7-l0eg"
         type="text/javascript"></script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jqModal.js"></script>
     <script language="javascript" type="text/javascript">
         function revealModal(id, text) {
-            window.onscroll = function() { document.getElementById('modalPage').style.top = document.body.scrollTop; };
-            document.getElementById('modalPage').style.display = "block";
-            document.getElementById('modalPage').style.top = document.body.scrollTop;
-            document.getElementById('popupImage').src = "images/photos/" + id + ".jpg";
-            document.getElementById('popupImage').alt = text + " (click to close)";
-            document.getElementById('popupImage').title = text + " (click to close)";
+            window.onscroll = function () { document.getElementById('modalPage').style.top = document.body.scrollTop; };
+            $('#modalPage').show();
+            $('#modalPage').style.top = document.body.scrollTop;
+            $('#popupImage').src = "images/photos/" + id + ".jpg";
+            $('#popupImage').alt = text + " (click to close)";
+            $('#popupImage').title = text + " (click to close)";
         }
 
         function hideModal() {
-            document.getElementById('modalPage').style.display = "none";
-            document.getElementById('popupImage').src = "";
+            $('#modalPage').hide();
+            $('#popupImage').src = "";
         }
         var geocoder = new GClientGeocoder();
         var map;
         function showAddress(address) {
             geocoder.getLatLng(
 			address,
-			function(point) {
+			function (point) {
 			    if (!point) {
 			        alert(address + " not found");
 			    } else {
@@ -61,21 +62,35 @@
                 map.setUIToDefault();
             }
         }
+        jQuery(document).ready(function () {
+            var TEST_COOKIE = 'test_cookie';
+            var rhmg_visited_cookie = 'rhmg_offer_cookie';
+            $.cookie(TEST_COOKIE, true);
+            if ($.cookie(TEST_COOKIE)) {
+                $.cookie(TEST_COOKIE, null);
+                // check if they have visited before
+                if ($.cookie(rhmg_visited_cookie)) {
+                    // if they have, do nothing
+                    return;
+                }
+                // if they haven't, display the modal
+                $('#rhmgOffer').jqm({ modal: true });
+                $('#rhmgOffer').jqmShow();
+                // and set the cookie
+                $.cookie(rhmg_visited_cookie, true, { expires: 28 });
+            }
+        });
     </script>
-
 </head>
-
 <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
-
 <script type="text/javascript">
     try {
         var pageTracker = _gat._getTracker("UA-12108588-1");
         pageTracker._trackPageview();
     } catch (err) { }</script>
-
 <body id="pageBody" runat="server">
     <form runat="server">
     <div>
@@ -149,5 +164,10 @@
         </center>
     </div>
     </form>
+    <div class="jqmWindow" id="rhmgOffer">
+        Please click <a href="#" class="jqmClose">close</a> and this window will not appear again (subject to cookies!). We hope to see you soon.
+        <hr />
+        <img src="images/special_offers/recording in blackpool lancashire only 160 per day.jpg" alt="Special Offer - Record in Blackpool, Lancashire for only £160 per day" />
+    </div>
 </body>
 </html>

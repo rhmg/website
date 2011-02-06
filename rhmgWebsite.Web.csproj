@@ -60,6 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\rhmgWebsite.xap" />
+    <Content Include="images\special_offers\recording in blackpool lancashire only 160 per day.jpg" />
+    <Content Include="js\jqModal.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\site.js" />
     <Content Include="PostImprovements.aspx" />
     <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool Rehearsal Room Newly Refurbished Drum Kits Guitar and Bass Amp.jpg" />
     <Content Include="images\photos\post_improvements\Rock Hard Studios Blackpool A Band Rehearsing in the Live Room.jpg" />
